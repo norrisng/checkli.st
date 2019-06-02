@@ -1,5 +1,6 @@
 <?php
     echo "<select>";
+        echo "<option>Select Checklist</option>";
     foreach(glob("lists/*.csv") as $filename) {
         $filename = substr($filename,strpos($filename,"/") + 1, -4);
         echo "<option value=\"" . $filename . "\">" . $filename . "</option>";
