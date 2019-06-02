@@ -1,9 +1,9 @@
 <form action="/" method="GET">
     <select onchange="this.form.submit()" name="l">
-        <option>Select Checklist</option>
+        <option value ="">Select Checklist</option>
     <?php foreach(glob("lists/*.csv") as $filename) {
         $filename = substr($filename,strpos($filename,"/") + 1, -4); ?>
-        <option value="<?php echo $filename; ?>"><?php echo $filename; ?></option>
+        <option value="<?php echo $filename; ?>" <?php if($_GET['l'] == $filename) {echo "selected";} ?>><?php echo $filename; ?></option>
     <?php } ?>
     </select>
 </form>
