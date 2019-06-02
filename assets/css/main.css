@@ -21,6 +21,7 @@ h1,h2 {
     border-bottom:3px solid #2F92D7;
     font-family:'Source Sans Pro', sans-serif;
     font-size:20px;
+    margin-bottom:5px;
 }
 .block {
         box-shadow:0 0 20px 2px rgba(0,0,0,0.1);
