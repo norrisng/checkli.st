@@ -99,7 +99,7 @@ FLAPS,As Req.
 GND SPLR,DISARM
 -CHECK-,Check LDG Gear 3 lights OFF
 -CHECK-,Check packs both ON
--CHECK-,Wait 10,000ft
+-CHECK-,Wait 10000ft
 LDG LT,OFF
 NOSE LT,OFF
 EXT LT,As Req.
@@ -115,7 +115,7 @@ DECISION HEIGHT,R3
 -GROUP-,Descent
 -CHECK-,Set descent height in FCU
 -CHECK-,Press FCU ALT knob inward at T/D
--CHECK-,Wait 10,000ft
+-CHECK-,Wait 10000ft
 LAND LT,ON
 NOSE LT,TO
 EXT LT,As Req.
