@@ -1,1 +1,2 @@
-"# checkli.st" 
+# checkli.st
+Flight Simulation Checklist Viewer
