@@ -2,8 +2,8 @@
     <select onchange="this.form.submit()" name="l">
         <option value ="">Select Checklist</option>
     <?php foreach(glob("lists/*.csv") as $filename) {
-        $filename = substr($filename,strpos($filename,"/") + 1, -4); ?>
-        <option value="<?php echo $filename; ?>" <?php if($_GET['l'] == $filename) {echo "selected";} ?>><?php echo $filename; ?></option>
+        $checklist = substr($filename,strpos($filename,"/") + 1, -4); ?>
+        <option value="<?php echo $checklist; ?>" <?php if($_GET['l'] == $checklist) {echo "selected";} ?>><?php echo $checklist; ?></option>
     <?php } ?>
     </select>
 </form>
