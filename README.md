@@ -1,7 +1,6 @@
-# checkli.st
+# Introduction
 Flight Simulation Checklist Viewer. Available at https://checklist.eparker.me
 
-# Introduction
 Displays .csv files as checklists, with the functionality for:
 - Different checklist groups (Before Start, Landing, etc)
 - Items that require waiting/monitoring/confirming a certain item has been met, or that should be emphasised in the checklist
