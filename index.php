@@ -1,7 +1,7 @@
 <?php
     echo "<select>";
     foreach(glob("lists/*.csv") as $filename) {
-        echo "<option value=\"" . $filename . "\">" . $filename . "</option>"
+        echo "<option value=\"" . $filename . "\">" . $filename . "</option>";
     }
     echo "</select>";
     if($_GET['l'] == "") {
