@@ -6,10 +6,10 @@
         $file = substr($filename,strpos($filename,"/") + 1, -4);
         if(strpos($file,"+") !== false) {
             foreach(explode("+",$file) as $item) {
-                array_push($checklists,[$item=>$file]);
+                $checklists[$item] = $file;
             }
         } else {
-            array_push($checklists,[$file=>$file]);
+            $checklists[$file] = $file;
         }
     }
 ?>
