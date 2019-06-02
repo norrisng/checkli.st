@@ -6,10 +6,10 @@
         $file = substr($filename,strpos($filename,"/") + 1, -4);
         if(strpos($file,"+") !== false) {
             foreach(explode("+",$file) as $item) {
-                array_push($checklists,[$item,$file]);
+                array_push($checklists,[$item=>$file]);
             }
         } else {
-            array_push($checklists,[$file,$file]);
+            array_push($checklists,[$file=>$file]);
         }
     }
 ?>
@@ -44,12 +44,12 @@
 <form method="GET">
     <select class="menu" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" name="l">
         <option value="">Select Checklist</option>
-    <?php foreach($checklists as $list) { ?>
-        <option value="<?php echo $list[1]; ?>" <?php if($current == $list[0]) {echo "selected";} ?>><?php echo $list[0]; ?></option>
+    <?php foreach($checklists as $key => $item) { ?>
+        <option value="<?php echo $key; ?>" <?php if($current == $key) {echo "selected";} ?>><?php echo $key; ?></option>
     <?php } ?>
     </select>
 </form>
-<?php if(file_exists("lists/" . $current . ".csv")) { ?>
+<?php if(file_exists("lists/" . $checklists[$current] . ".csv")) { ?>
     <?php $first = true; $checklist = preg_split('/\r\n|\r|\n/', file_get_contents("lists/" . $current . ".csv")); ?>
         <?php foreach($checklist as $check) { ?>
             <?php $line = explode(",",$check);
