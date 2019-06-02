@@ -1,7 +1,7 @@
 <?php $current = $_GET['l']; ?>
 <html>
 <head>
-    <title><?php if($current == "") {echo "checkli.st | Flight Simulation Checklist Viewer";} else {echo $filename . " | checkli.st";} ?></title>
+    <title><?php if($current == "") {echo "checkli.st | Flight Simulation Checklist Viewer";} else {echo $current . " | checkli.st";} ?></title>
 </head>
 <body>
 <form action="/" method="GET">
