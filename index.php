@@ -2,6 +2,13 @@
 <html>
 <head>
     <title><?php if($current == "") {echo "checkli.st | Flight Simulation Checklist Viewer";} else {echo $current . " | checkli.st";} ?></title>
+    <meta name="description" content="checkli.st - Flight Simulation Checklist Viewer">
+		
+    <meta property="og:site_name" content="checkli.st">
+    <meta property="og:title" content="checkli.st">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Flight Simulation Checklist Viewer">
+    <meta property="og:url" content="https://checklist.eparker.me">
 </head>
 <body>
 <form action="/" method="GET">
