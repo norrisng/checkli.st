@@ -18,10 +18,27 @@ To identify the start of a new group, the first column of the line should be `-G
 | --- |
 | Before Start |
 
-##Emphasised Items
+## Emphasised Items
 To identify an item that should be emphasised, the first column of the line should be `-CHECK-`, and the second the content (eg. `Wait until NG is 90%`, `Check 3 Greens`, etc)
 
 **Example:** `-CHECK-,Wait Until NG is 90%`
 | Result |
 | --- |
 | *Wait Until NG is 90%* |
+
+## Checklist Items
+To identify a normal checklist item, the first column of the line should be the item (eg. `LDG Gear Lever`, `COMM1`, etc), and the second the state that is required (eg. `DOWN`, `Tuned`, etc).
+*It is also preferred that items that have an explicit value required (eg. `ON`, `OFF`, etc) are in upper case, and other items in sentence case (eg. `As Required`, `Guarded`, etc)
+
+**Example:** `Lights,ON`
+| Result | |
+| --- | --- |
+| Lights | ON |
+
+**Example:** `Pressurisation,As Req.`
+| Result | |
+| --- | --- |
+| Pressurisation | As Req. |
+
+# Contributing Checklists
+If you have any aircraft that aren't included here, you can simply make a checklist file for it, and attach the file to an issue. If you cannot create a checklist yourself, you are also able to request a checklist be made, by creating an issue.
