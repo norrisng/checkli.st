@@ -1,3 +1,4 @@
+<?php error_reporting(0); ?>
 <?php $current = $_GET['l']; ?>
 <html>
 <head>
@@ -9,10 +10,12 @@
     <meta property="og:type" content="article">
     <meta property="og:description" content="Flight Simulation Checklist Viewer">
     <meta property="og:url" content="https://checklist.eparker.me">
+
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
 </head>
 <body>
 <form action="/" method="GET">
-    <select onchange="this.form.submit()" name="l">
+    <select class="menu" onchange="this.form.submit()" name="l">
         <option value="">Select Checklist</option>
     <?php foreach(glob("lists/*.csv") as $filename) {
         $item = substr($filename,strpos($filename,"/") + 1, -4); ?>
