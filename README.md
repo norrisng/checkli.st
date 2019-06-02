@@ -41,3 +41,5 @@ To identify a normal checklist item, the first column of the line should be the 
 
 ## Contributing Checklists
 If you have any aircraft that aren't included here, you can simply make a checklist file for it, and attach the file to an issue. If you cannot create a checklist yourself, you are also able to request a checklist be made, by creating an issue.
+
+If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.
