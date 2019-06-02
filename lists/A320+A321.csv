@@ -27,10 +27,10 @@ Select RWY,Lx
 Select SID,Lx
 Select TRANS,Rx
 INSERT,R6
--INFO-,Enter route by selecting waypoint, and choosing NEXT WPT or AIRWAYS.
+-INFO-,Enter route by selecting waypoint and choosing NEXT WPT or AIRWAYS
 -GROUP-,MCDU PERF
 FLAPS,R3
--INFO-,Check V-speeds automatically entered.
+-INFO-,Check V-speeds automatically entered
 FLEX TEMP,R4 As Req.
 -GROUP-,Before Start
 FUEL PUMPS,ON
