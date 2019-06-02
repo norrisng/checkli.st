@@ -8,7 +8,9 @@
     </select>
     
 </form>
-<?php if($_GET['l'] == "") { ?>
+<?php if(file_exists("lists/" . $filename . ".csv")) { ?>
+    <h1><?php echo $filename; ?> Checklist</h1>
+<?php } else { ?>
     <h1>checkli.st</h1>
     <h2>Flight Simulation Checklist Viewer</h2>
 <?php } ?>
