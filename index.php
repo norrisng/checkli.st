@@ -51,7 +51,7 @@
                     <div class="block">
                         <table>
                 <?php }?>
-                <tr><td COLSPAN="3" style="color:red;"><i><?php echo $line[1]; ?></i></td></tr>
+                <span><i><?php echo $line[1]; ?></i></span>
             <?php } else if($line[0] == "-CHECK-") { ?>
                 <tr><td COLSPAN="3" style="text-align:center;"><br><i><?php echo $line[1]; ?></i><br><br></td></tr>
             <?php } else { ?>
