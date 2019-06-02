@@ -1,0 +1,109 @@
+-GROUP-,Before Flight
+PARK BRAKE,ON
+BAT,OFF
+ALT,OFF
+IGNITION,OFF
+AVIONICS MASTER,OFF
+FLAPS,UP
+AUX FUEL PUMP,OFF
+MIXTURE,LEAN
+THROTTLE,IDLE
+PROP PITCH,0.00%
+COWL FLAP,OPEN
+LIGHTS,OFF
+-GROUP-,Before Start
+BAT,ON
+ALT,ON
+BEACON LT,ON
+AVIONICS MASTER,ON
+RADIO 1,ON
+RADIO 2,ON
+NAV,ON
+XPDR,SBY
+-INFO-,Set SQWK as required
+-INFO-,Set frequencies as required
+-GROUP-,Engine Start
+FUEL TANK,L/R
+PROP PITCH,100.00%
+MIXTURE,90.00%
+THROTTLE,50.00%
+AUX FUEL PUMP,ON
+-INFO-,Wait until fuel flow in green
+AUX FUEL PUMP,OFF
+MIXTURE,60.00%
+IGNITION,START
+-INFO-,"If engine doesn't start after 20 seconds, wait 10 seconds before trying again."
+-INFO-,"If engine doesn't start after 3 attempts, go to Flooded Engine Start."
+-GROUP-,Flooded Engine Start
+IGNITION,OFF
+THROTTLE,50.00%
+MIXTURE,0.00%
+IGNITION,START
+-INFO-,"If engine doesn't start after 20 seconds, continue"
+IGNITION,OFF
+FUEL TANK,OFF
+IGNITION,START
+-INFO-,Wait until engine starts
+FUEL TANK,L/R
+-GROUP-,After Start
+MIXTURE,10-20%
+THROTTLE,10-20%
+-INFO-,Maintain MAN PRES in green to keep engine alive
+-GROUP-,Before Taxi
+NAV LT,ON
+-GROUP-,Taxi
+TAXI LT,ON
+-GROUP-,Before Takeoff
+STROBE LT,ON
+LAND LT,ON
+TAXI LT,OFF
+FLAPS,10
+-GROUP-,Run-up
+MIXTURE,RICH
+-INFO-,Advance throttles to full
+-INFO-,Check normal engine operation
+-INFO-,Check L/R magnetos
+THROTTLE,10-20%
+-GROUP-,Takeoff
+MIXTURE,RICH
+-INFO-,Advance throttles to full
+-INFO-,Wait 80kt
+-INFO-,ROTATE
+-GROUP-,After Takeoff
+LDG GEAR,UP
+FLAPS,UP
+COWL FLAP,CLOSED
+LAND LT,OFF
+-GROUP-,Cruise
+-INFO-,Adjust PROP PITCH to maintain 2100-2300RPM
+-GROUP-,Before Landing
+PROP PITCH,100.00%
+LAND LT,ON
+-GROUP-,Landing
+-INFO-,Wait 120kt
+FLAPS,DOWN
+LDG GEAR,DOWN
+COWL FLAP,OPEN
+-GROUP-,Taxi
+FLAPS,UP
+MIXTURE,10-20%
+TAXI LT,ON
+LAND LT,OFF
+STROBE LT,OFF
+-GROUP-,Before Shutdown
+TAXI LT,OFF
+NAV LT,OFF
+-GROUP-,Engine Shutdown
+MIXTURE ,LEAN
+-INFO-,Wait for engine cutout
+THROTTLE,IDLE
+PROP PITCH,0.00%
+RADIO 1,OFF
+RADIO 2,OFF
+NAV,OFF
+XPDR,SBY
+AVIONICS MASTER,OFF
+BEACON LT,OFF
+FUEL TANK,OFF
+BAT,OFF
+ALT,OFF
