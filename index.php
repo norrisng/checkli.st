@@ -12,11 +12,18 @@
         <option value="<?php echo $item; ?>" <?php if($current == $item) {echo "selected";} ?>><?php echo $item; ?></option>
     <?php } ?>
     </select>
-    
 </form>
 <?php if(file_exists("lists/" . $current . ".csv")) { ?>
+    <?php $checklist = preg_split('/\r\n|\r|\n/', file_get_contents("lists/" . $current . ".csv")); ?>
     <h1><?php echo $current; ?> Checklist</h1>
-
+    <table>
+        <?php foreach($checklist as $check) { ?>
+            <?php $line = explode(",",$check);
+            if($line[0] == "-GROUP-") {?>
+                <tr><td COLSPAN="3" style="color:red;"><?php echo $line[1]; ?></td></tr>
+            <?php } ?>
+        <?php } ?>
+    </table>
 <?php } else { ?>
     <h1>checkli.st</h1>
     <h2>Flight Simulation Checklist Viewer</h2>
