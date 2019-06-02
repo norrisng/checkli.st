@@ -1,0 +1,180 @@
+-GROUP-,Before Flight
+GANGWAY,ENABLE
+-CHECK-,Check doors open
+PARKING BRK,ON
+EXT PWR,ON
+BAT,Both ON
+-CHECK-,Adjust PFD brightness as required
+-CHECK-,Adjust ND brightness as required
+-CHECK-,Adjust ECAM upper display brightness as required
+-CHECK-,Adjust ECAM lower display brightness as required
+ADIRS,NAV
+RADIOS,ON
+-GROUP-,MCDU INIT
+IRS INIT,R3
+IRS INIT,ALIGN IRS
+FROM/TO,R1
+FLT NBR,L3
+COST INDEX,L5
+CRZ FL,L6
+-CHECK-,Next Page
+ZFW/ZFWCG,R1
+BLOCK,R2
+-GROUP-,MCDU F-PLN
+Select DEP ARPT,L1
+Select DEPARTURE,L1
+Select RWY,Lx
+Select SID,Lx
+Select TRANS,Rx
+INSERT,R6
+-CHECK-,"Enter route by selecting waypoint, and choosing NEXT WPT or AIRWAYS."
+-GROUP-,MCDU PERF
+FLAPS,R3
+-CHECK-,Check V-speeds automatically entered.
+FLEX TEMP,R4 As Req.
+-GROUP-,Before Start
+FUEL PUMPS,ON
+-CHECK-,Set altimeter
+SEAT BELTS,ON
+NO SMOKING,AUTO
+EMER EXIT LT,ARM
+BEACON,ON
+EXT LT,As Req.
+-CHECK-,Doors closed
+AUTO BRK,MAX
+A/SKID,ON
+-CHECK-,Input SQWK
+-CHECK-,Input cleared altitude to FCU
+XPDR,STBY
+TCAS,TA/RA
+PWS,AUTO
+-CHECK-,Check parking brake on
+-CHECK-,Remove chocks
+APU MASTER SW,ON
+APU START,ON
+-CHECK-,Wait APU AVAIL
+EXT PWR ,OFF (AVAIL)
+-CHECK-,Disconnect EXT PWR
+-CHECK-,Remove cones
+ANTI ICE,As Req.
+PROBE/WINDOW HEAT,As Req.
+-GROUP-,Engine Start
+ENG MODE,IGN/START
+APU BLEED,ON
+ENG 2 MASTER,ON
+-CHECK-,Check ENG 2 N2 rising
+-CHECK-,Wait GEN 2 FAULT extinguished
+ENG 1 MASTER,ON
+-CHECK-,Check ENG 2 N2 rising
+-CHECK-,Wait GEN 1 FAULT extinguished
+ENG MODE,NORMAL
+APU BLEED,OFF
+APU MASTER SW,OFF
+-GROUP-,Before Taxi
+FLT DIRECTORS,ON
+NAV LT,ON
+-GROUP-,Taxi
+NOSE LT,TAXI
+-GROUP-,Before Takeoff
+-CHECK-,Set FLAPS
+GND SPLR,ARM
+-CHECK-,Check TO CONFIG NORMAL
+RWY TURN OFF,ON
+STROBE LT,ON
+LAND LT,ON
+NOSE LT,TO
+-GROUP-,Takeoff
+RWY TURN OFF,OFF
+-CHECK-,"Check FCU Dash Dot, Dash Dot, Number, Dot"
+-CHECK-,Advance throttles to TOGA
+-CHECK-,Check A/THR ON
+-CHECK-,Wait V1
+-CHECK-,Wait VR
+-CHECK-,ROTATE
+-GROUP-,After Takeoff
+LDG GEAR,UP
+AP1,ON
+XPDR,ON
+FLAPS,As Req.
+GND SPLR,DISARM
+-CHECK-,Check LDG Gear 3 lights OFF
+-CHECK-,Check packs both ON
+-CHECK-,"Wait 10,000ft"
+LDG LT,OFF
+NOSE LT,OFF
+EXT LT,As Req.
+-CHECK-,Pull altimeter knob to set STD
+-GROUP-,Before Descent
+AUTO BRK,As Req.
+-GROUP-,MCDU PERF
+-CHECK-,Set ARR phase
+QNH,L1
+TEMP,L2
+MAG WIND,L3
+DECISION HEIGHT,R3
+-GROUP-,Descent
+-CHECK-,Set descent height in FCU
+-CHECK-,Press FCU ALT knob inward at T/D
+-CHECK-,"Wait 10,000ft"
+LAND LT,ON
+NOSE LT,TO
+EXT LT,As Req.
+-CHECK-,Set altimeter
+-CHECK-,FLAPS 1 at 230kt
+-CHECK-,FLAPS 2 at 200kt
+-CHECK-,FLAPS 3 at 185kt
+-CHECK-,FLAPS FULL at 177kt
+-CHECK-,FCU LS ON
+-CHECK-,FCU LOC ON
+-CHECK-,Wait LOC established
+-CHECK-,FCU APPR ON
+-GROUP-,LANDING
+LDG GEAR,DOWN
+-CHECK-,Check 3 greens
+GND SPLR,ARM
+-CHECK-,Thrust reversers OFF at 60kt
+-GROUP-,Taxi
+XPDR,STBY
+FLT DIRECTORS,OFF
+GND SPLR,DISARM
+FLAPS,UP
+AUTO BRK,OFF
+LAND LT,OFF
+STROBE LT,OFF
+NOST LT,TAXI
+APU MASTER SW,ON
+APU START,ON
+-GROUP-,Before Shutdown/Turnaround
+NAV LT,OFF
+NOSE LT,OFF
+EXT LT,OFF
+PARKING BRK,ON
+ENG 2 MASTER,OFF
+ENG 1 MASTER,OFF
+-CHECK-,Insert chocks
+PARKING BRK,OFF
+FUEL PUMPS,OFF
+SEAT BELTS,OFF
+-CHECK-,Check doors open
+GANGWAY,ENABLE
+BEACON,OFF
+-CHECK-,Connect EXT PWR
+-CHECK-,Place cones/ground equipment
+EXT PWR,ON
+APU MASTER SW,OFF
+ANTI ICE,OFF
+PROBE/WINDOW HEAT,OFF
+TCAS,STBY
+PWS,OFF
+-GROUP-,Shutdown
+EXT LT,OFF
+INT LT,OFF
+RADIOS,OFF
+-CHECK-,PFD brightness OFF
+-CHECK-,ND brightness OFF
+-CHECK-,Upper ECAM brightness OFF
+-CHECK-,Lower ECAM brightness OFF
+ADIRS,OFF
+NO SMOKING,OFF
+EMER EXIT LT,OFF
+BAT,Both OFF
