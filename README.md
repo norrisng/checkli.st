@@ -7,7 +7,7 @@ Displays .csv files as checklists, with the functionality for:
 - Normal checks (Possibility to add item-by-item checking off in the future)
 
 ## Checklist Formatting
-Checklists should be in the `.csv` file format, with one line per item.
+Checklists should be in the `.csv` file format, with one line per item. The file name should be the ICAO code of the aircraft (eg. `PC9.csv`). If there are multiple aircraft applying to one checklist, list all with a `+` between ICAO codes (eg. `A320+A321.csv`).
 
 ### Groups
 To identify the start of a new group, the first column of the line should be `-GROUP-`, and the second the title/name of the group (eg. `Before Start`, `Landing`, etc)
