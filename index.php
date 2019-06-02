@@ -45,7 +45,7 @@
     <select class="menu" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" name="l">
         <option value="">Select Checklist</option>
     <?php foreach($checklists as $key => $item) { ?>
-        <option value="<?php echo $key; ?>" <?php if($_GET['l'] == $key) {echo "selected";} ?>><?php echo $key; ?></option>
+        <option value="<?php echo $key; ?>" <?php if($current == $key) {echo "selected";} ?>><?php echo $key; ?></option>
     <?php } ?>
     </select>
 </form>
