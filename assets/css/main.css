@@ -8,10 +8,11 @@ body {
 form {
     margin:0;
 }
-h1,h2 {
+h1,h2,p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:400;
     margin:0;
+    display:inline;
 }
 .menu {
     width:100%;

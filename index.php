@@ -61,8 +61,12 @@
         </table>
     </div>
 <?php } else { ?>
-    <h1>checkli.st</h1>
-    <h2>Flight Simulation Checklist Viewer</h2>
+    <h1>checkli.st</h1><br>
+    <h2>Open-Source Flight Simulation Checklist Viewer</h2>
+    <p>Available on <a href="https://github.com/flightcode/checkli.st">github</a></p>
+    <p>If you have any aircraft that aren't included here, you can simply make a checklist file for it, and attach the file to an issue on github. If you cannot create a checklist yourself, you are also able to request a checklist be made, by creating an issue.</p><br>
+    <br>
+    <p>If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.</p>
 <?php } ?>
 </body>
 </html>
