@@ -24,20 +24,28 @@
     </select>
 </form>
 <?php if(file_exists("lists/" . $current . ".csv")) { ?>
-    <?php $checklist = preg_split('/\r\n|\r|\n/', file_get_contents("lists/" . $current . ".csv")); ?>
-    <h1><?php echo $current; ?> Checklist</h1>
-    <table>
+    <?php $first = true; $checklist = preg_split('/\r\n|\r|\n/', file_get_contents("lists/" . $current . ".csv")); ?>
         <?php foreach($checklist as $check) { ?>
             <?php $line = explode(",",$check);
             if($line[0] == "-GROUP-") {?>
-                <tr><td COLSPAN="3" style="color:red;"><br><i><?php echo $line[1]; ?></i></td></tr>
+                <?php if($first == true) { $first = false; ?>
+                    <div class="block">
+                        <table>
+                <?php } else { ?>
+                        </table>
+                    </div>
+                    <div class="block">
+                        <table>
+                <?php }?>
+                <tr><td COLSPAN="3" style="color:red;"><i><?php echo $line[1]; ?></i></td></tr>
             <?php } else if($line[0] == "-CHECK-") { ?>
                 <tr><td COLSPAN="3" style="text-align:center;"><br><i><?php echo $line[1]; ?></i><br><br></td></tr>
             <?php } else { ?>
                 <tr><td COLSPAN="2"><?php echo $line[0]; ?></td><td style="border-left:1px solid black;"><?php echo $line[1]; ?></td></tr>
             <?php } ?>
         <?php } ?>
-    </table>
+        </table>
+    </div>
 <?php } else { ?>
     <h1>checkli.st</h1>
     <h2>Flight Simulation Checklist Viewer</h2>
