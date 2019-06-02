@@ -14,8 +14,8 @@
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
 </head>
 <body>
-<form action="/" method="GET">
-    <select class="menu" onchange="this.form.submit()" name="l">
+<form method="GET">
+    <select class="menu" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" name="l">
         <option value="">Select Checklist</option>
     <?php foreach(glob("lists/*.csv") as $filename) {
         $item = substr($filename,strpos($filename,"/") + 1, -4); ?>
