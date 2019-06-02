@@ -107,10 +107,10 @@ PCL,MAX
 LG HANDLE,UP
 FLAPS,UP
 AIR BRAKE,IN
--CHECK-,"Check by 150 KIAS:
-LG LIGHT OUT
-FLAPS indicating UP
-AIR BRAKE indicating IN"
+-CHECK-,Check by 150 KIAS
+-CHECK-,LG LIGHT OUT 
+-CHECK-,FLAPS indicating UP 
+-CHECK-,AIR BRAKE indicating IN
 -GROUP-,Before Landing
 -CHECK-,Check below 150 KIAS
 AIR BRAKE,IN
