@@ -2,6 +2,15 @@
 <?php $current = $_GET['l']; ?>
 <html>
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119179825-5"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119179825-5');
+    </script>
+
     <title><?php if($current == "") {echo "checkli.st | Flight Simulation Checklist Viewer";} else {echo $current . " | checkli.st";} ?></title>
     <meta name="description" content="checkli.st - Flight Simulation Checklist Viewer">
 		
