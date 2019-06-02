@@ -23,6 +23,8 @@
                 <tr><td COLSPAN="3" style="color:red;"><i><?php echo $line[1]; ?></i></td></tr>
             <?php } else if($line[0] == "-CHECK-") { ?>
                 <tr><td COLSPAN="3" style="text-align:center;"><i><?php echo $line[1]; ?></i></td></tr>
+            <?php } else { ?>
+                <tr><td COLSPAN="2"><?php echo $line[0]; ?></td><td style="border-left:1px solid black;"><?php echo $line[1]; ?></td></tr>
             <?php } ?>
         <?php } ?>
     </table>
