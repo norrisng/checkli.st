@@ -29,10 +29,10 @@ To identify an item that should be emphasised, the first column of the line shou
 To identify a normal checklist item, the first column of the line should be the item (eg. `LDG Gear Lever`, `COMM1`, etc), and the second the state that is required (eg. `DOWN`, `Tuned`, etc).
 *It is also preferred that items that have an explicit value required (eg. `ON`, `OFF`, etc) are in upper case, and other items in sentence case (eg. `As Required`, `Guarded`, etc)
 
-**Example:** `Lights,ON`
+**Example:** `Battery,ON`
 | Result | |
 | --- | --- |
-| Lights | ON |
+| Battery | ON |
 
 **Example:** `Pressurisation,As Req.`
 | Result | |
