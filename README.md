@@ -18,9 +18,9 @@ To identify the start of a new group, the first column of the line should be `-G
 | Before Start |
 
 ### Emphasised Items
-To identify an item that should be emphasised, the first column of the line should be `-CHECK-`, and the second the content (eg. `Wait until NG is 90%`, `Check 3 Greens`, etc)
+To identify an item that should be emphasised, the first column of the line should be `-INFO-`, and the second the content (eg. `Wait until NG is 90%`, `Check 3 Greens`, etc)
 
-**Example:** `-CHECK-,Wait Until NG is 90%`
+**Example:** `-INFO-,Wait Until NG is 90%`
 | Result |
 | --- |
 | *Wait Until NG is 90%* |

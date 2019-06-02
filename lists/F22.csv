@@ -28,15 +28,15 @@ OXYGEN MODE,NORM
 OXYGEN PWR,ON
 -GROUP-,Engine Start
 BATTERY,ON
--CHECK-,Confirm UFD powerup
+-INFO-,Confirm UFD powerup
 APU,START
--CHECK-,Monitor APU Status. Check for OK.
+-INFO-,Monitor APU Status. Check for OK.
 L/R GEN,ON
 POSITION LT,ANTICOL
 L THROTTLE,IDLE
--CHECK-,Monitor Engine Status - Check for OK
+-INFO-,Monitor Engine Status - Check for OK
 R THROTTLE,IDLE
--CHECK-,Monitor Engine Status - Check for OK
+-INFO-,Monitor Engine Status - Check for OK
 APU,OFF
 -GROUP-,After Start
 PMFD,As Req.
@@ -45,35 +45,35 @@ SMFD,As Req.
 LAND/TAXI LT,TAXI
 PARK BRAKE,RELEASE
 -GROUP-,Before Takeoff
--CHECK-,Check instruments for normal operation
+-INFO-,Check instruments for normal operation
 LAND/TAXI LT,LAND
 PARK BRAKE,ANTI-SKID
 POSITION LT,POSN/ ANTICOL
 -GROUP-,Takeoff
 THROTTLE,TAKEOFF
--CHECK-,Wait 100 KIAS
--CHECK-,ROTATE 10 degrees
+-INFO-,Wait 100 KIAS
+-INFO-,ROTATE 10 degrees
 LDG GEAR,UP
--CHECK-,Check instruments for normal operation
+-INFO-,Check instruments for normal operation
 -GROUP-,Before Landing
 FLAPS,AUTO
--CHECK-,Wait 150 KIAS
+-INFO-,Wait 150 KIAS
 LDG GEAR,DOWN
 LAND/TAXI LT,LAND
 PARK BRAKE,RELEASE
 -GROUP-,Landing
--CHECK-,Check park brake released
--CHECK-,Approach speed 140 KIAS
--CHECK-,Threshold speed 130 KIAS 
--CHECK-,Landing Speed 120 KIAS
+-INFO-,Check park brake released
+-INFO-,Approach speed 140 KIAS
+-INFO-,Threshold speed 130 KIAS 
+-INFO-,Landing Speed 120 KIAS
 -GROUP-,After Landing
 PARK BRAKE,As Req.
--CHECK-,Wait until clear of active runway
+-INFO-,Wait until clear of active runway
 POSITION LT,ANTICOL
 APU,START
--CHECK-,Monitor APU Status. Check for OK.
+-INFO-,Monitor APU Status. Check for OK.
 LAND/TAXI LT,TAXI
--CHECK-,Check instruments for normal operation
+-INFO-,Check instruments for normal operation
 -GROUP-,Engine Shutdown
 PARK BRAKE,PARK
 POSITION LT,OFF

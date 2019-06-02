@@ -14,20 +14,19 @@ BAT MASTER,OFF
 -GROUP-,Before Start
 EPU,As Req.
 BAT MASTER,ON
-OXYGEN,"ON &
-NORM"
+OXYGEN,ON & NORM
 FLAPS,UP
 ELT,Guarded ARM
 INRT SEP,OFF
 PROBES,OFF
 LDG LIGHT,OFF
 INVERTER,GEN
--CHECK-,Check INV caption extinguished
+-INFO-,Check INV caption extinguished
 AVIONICS BAT,OFF
 AVIONICS GEN,OFF
 CLOCK,SET
 LG HANDLE,DOWN
--CHECK-,Check three greens
+-INFO-,Check three greens
 ACCELEROMETER,RESET
 MASTER CAUTION,RESET
 FUEL USED,RESET
@@ -49,26 +48,26 @@ NAV LIGHT,ON
 STROBE/BCN LIGHTS,BCN
 BOOST PUMPS,ON
 STARTER,ON
--CHECK-,Check ENG OIL pressure rising
+-INFO-,Check ENG OIL pressure rising
 IGNITION,ON
--CHECK-,Wait NG stabilised (minimum 12%)
+-INFO-,Wait NG stabilised (minimum 12%)
 PCL,IDLE
--CHECK-,Wait NG stabilised (minimum 56%)
+-INFO-,Wait NG stabilised (minimum 56%)
 IGNITION,Guarded OFF
 STARTER,Guarded OFF
 BOOST PUMPS,ARM
 -GROUP-,After Start
 EPU,Disconnected
 BAT MASTER,ON
--CHECK-,Check CWS GEN caption only
+-INFO-,Check CWS GEN caption only
 GEN MASTER,ON
--CHECK-,Check CWS GEN caption OUT
+-INFO-,Check CWS GEN caption OUT
 INVERTER,BAT
 AVIONICS BAT,ON
 AVIONICS GEN,ON
 ECS,LOW
--CHECK-,Check FLAPS indicating
--CHECK-,Check AIR BRAKE indicating
+-INFO-,Check FLAPS indicating
+-INFO-,Check AIR BRAKE indicating
 COMM1,SET
 COMM2,SET
 NAV/TAC,SET
@@ -80,17 +79,17 @@ ALTIMETER QNH,SET
 SEAT PIN,REMOVED & STOWED
 -GROUP-,Taxi
 PARKING BRAKE,ON
--CHECK-,Check brakes functional
+-INFO-,Check brakes functional
 NOSE WHEEL STEERING,ON
 -GROUP-,Before Takeoff
 CANOPY,CLOSED & LOCKED
--CHECK-,Check CANOPY light out
+-INFO-,Check CANOPY light out
 AIR BRAKE,IN
 FLAPS,TAKE OFF
--CHECK-,Check FLAPS indicating
+-INFO-,Check FLAPS indicating
 PROBES,ON
 TRIMS,SET
--CHECK-,Check CWS no amber/red
+-INFO-,Check CWS no amber/red
 OXYGEN,ON & NORM
 SEAT PIN,REMOVED & STOWED
 -GROUP-,Line Up
@@ -101,21 +100,21 @@ STROBE/BCN LIGHTS,As Req.
 -GROUP-,Takeoff
 BRAKES,RELEASE
 PCL,MAX
--CHECK-,Wait 80 KIAS
--CHECK-,ROTATE
+-INFO-,Wait 80 KIAS
+-INFO-,ROTATE
 -GROUP-,After Takeoff
 LG HANDLE,UP
 FLAPS,UP
 AIR BRAKE,IN
--CHECK-,Check by 150 KIAS
--CHECK-,LG LIGHT OUT 
--CHECK-,FLAPS indicating UP 
--CHECK-,AIR BRAKE indicating IN
+-INFO-,Check by 150 KIAS
+-INFO-,LG LIGHT OUT 
+-INFO-,FLAPS indicating UP 
+-INFO-,AIR BRAKE indicating IN
 -GROUP-,Before Landing
--CHECK-,Check below 150 KIAS
+-INFO-,Check below 150 KIAS
 AIR BRAKE,IN
 LG HANDLE,DOWN
--CHECK-,Check three greens
+-INFO-,Check three greens
 FLAPS,As Req.
 LG HANDLE,DOWN
 -GROUP-,After Landing
