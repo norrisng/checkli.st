@@ -83,8 +83,8 @@
     <br>
     <h3>Current Aircraft Supported:</h3><br>
     <ul>
-    <?php foreach($checklists as $list) { ?>
-        <li><?php echo $list[0]; ?></li>
+    <?php foreach($checklists as $key => $item) { ?>
+        <li><?php echo $key . "(" . $item . ")"; ?></li>
     <?php } ?>
     </ul>
 <?php } ?>
