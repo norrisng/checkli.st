@@ -81,7 +81,7 @@
     <br>
     <p>If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.</p><br>
     <br>
-    <h3>Current Aircraft Supported:</h3><br>
+    <h3>Current Aircraft Supported:</h3>
     <ul>
     <?php foreach($checklists as $key => $item) { ?>
         <li><?php echo $key; ?></li>
