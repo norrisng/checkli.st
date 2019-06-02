@@ -1,7 +1,7 @@
 <?php
     echo "<select>";
     foreach(glob("lists/*.csv") as $filename) {
-        $filename = substr($filename,strpos("/") + 1, -4);
+        $filename = substr($filename,strpos($filename,"/") + 1, -4);
         echo "<option value=\"" . $filename . "\">" . $filename . "</option>";
     }
     echo "</select>";
