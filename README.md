@@ -1,3 +1,4 @@
+# checkli.st
 Flight Simulation Checklist Viewer. Available at https://checklist.eparker.me
 
 Displays .csv files as checklists, with the functionality for:
