@@ -1,5 +1,18 @@
 <?php error_reporting(0); ?>
 <?php $current = $_GET['l']; ?>
+<?php 
+    $checklists = array();
+    foreach(glob("lists/*.csv") as $filename) {
+        $file = substr($filename,strpos($filename,"/") + 1, -4);
+        if(strpos($file,"+") !== false) {
+            foreach(explode("+",$file) as $item) {
+                array_push($checklists,[$item,$file]);
+            }
+        } else {
+            array_push($checklists,[$item,$file]);
+        }
+    }
+?>
 <html>
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119179825-5"></script>
@@ -31,9 +44,8 @@
 <form method="GET">
     <select class="menu" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" name="l">
         <option value="">Select Checklist</option>
-    <?php foreach(glob("lists/*.csv") as $filename) {
-        $item = substr($filename,strpos($filename,"/") + 1, -4); ?>
-        <option value="<?php echo $item; ?>" <?php if($current == $item) {echo "selected";} ?>><?php echo $item; ?></option>
+    <?php foreach($checklists as $list) { ?>
+        <option value="<?php echo $list[1]; ?>" <?php if($current == $list[0]) {echo "selected";} ?>><?php echo $$list[0]; ?></option>
     <?php } ?>
     </select>
 </form>
@@ -67,7 +79,14 @@
     <br>
     <p>If you have any aircraft that aren't included here, you can simply make a checklist file for it, and attach the file to an issue on github. If you cannot create a checklist yourself, you are also able to request a checklist be made, by creating an issue.</p><br>
     <br>
-    <p>If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.</p>
+    <p>If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.</p><br>
+    <br>
+    <h3>Current Aircraft Supported:</h3><br>
+    <ul>
+    <?php foreach($checklists as $list) { ?>
+        <li><?php echo $list[0]; ?></li>
+    <?php } ?>
+    </ul>
 <?php } ?>
 </body>
 </html>
