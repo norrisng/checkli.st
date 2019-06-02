@@ -11,7 +11,12 @@
     <meta property="og:description" content="Flight Simulation Checklist Viewer">
     <meta property="og:url" content="https://checklist.eparker.me">
 
-    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+    <link rel="icon" href="https://eparker.me/assets/img/logo/logo.png">
+    <link rel="shortcut icon" href="https://eparker.me/assets/img/logo/logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
 <form method="GET">
