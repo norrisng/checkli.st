@@ -30,7 +30,7 @@ OXYGEN PWR,ON
 BATTERY,ON
 -INFO-,Confirm UFD powerup
 APU,START
--INFO-,Monitor APU Status. Check for OK.
+-INFO-,Monitor APU Status - Check for OK
 L/R GEN,ON
 POSITION LT,ANTICOL
 L THROTTLE,IDLE
@@ -71,7 +71,7 @@ PARK BRAKE,As Req.
 -INFO-,Wait until clear of active runway
 POSITION LT,ANTICOL
 APU,START
--INFO-,Monitor APU Status. Check for OK.
+-INFO-,Monitor APU Status - Check for OK
 LAND/TAXI LT,TAXI
 -INFO-,Check instruments for normal operation
 -GROUP-,Engine Shutdown
