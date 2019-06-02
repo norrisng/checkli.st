@@ -7,3 +7,7 @@
     <?php } ?>
     </select>
 </form>
+<?php if($_GET['l'] == "") { ?>
+    <h1>checkli.st</h1>
+    <h2>Flight Simulation Checklist Viewer</h2>
+<?php } ?>
