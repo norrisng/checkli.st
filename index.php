@@ -20,7 +20,9 @@
         <?php foreach($checklist as $check) { ?>
             <?php $line = explode(",",$check);
             if($line[0] == "-GROUP-") {?>
-                <tr><td COLSPAN="3" style="color:red;"><?php echo $line[1]; ?></td></tr>
+                <tr><td COLSPAN="3" style="color:red;"><i><?php echo $line[1]; ?></i></td></tr>
+            <?php } else if($line[0] == "-CHECK-") { ?>
+                <tr><td COLSPAN="3" style="text-align:center;"><i><?php echo $line[1]; ?></i></td></tr>
             <?php } ?>
         <?php } ?>
     </table>
