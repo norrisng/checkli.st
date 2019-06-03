@@ -128,7 +128,7 @@ EXT LT,As Req.
 -INFO-,FCU LOC ON
 -INFO-,Wait LOC established
 -INFO-,FCU APPR ON
--GROUP-,LANDING
+-GROUP-,Landing
 LDG GEAR,DOWN
 -INFO-,Check 3 greens
 GND SPLR,ARM
