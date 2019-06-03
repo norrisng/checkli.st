@@ -30,7 +30,6 @@ ul {
     cursor:pointer;
 }
 .body {
-    height:calc(100% - 70px);
     overflow-y:scroll;
     -webkit-overflow-scrolling:touch;
 }
@@ -48,12 +47,16 @@ ul {
     @media only screen and (min-width:1201px) {
         .body {
             padding:20px 200px 0px 200px;
+            height:calc(100% - 70px);
         }
         .block {
             max-width:calc(50% - 70px);
         }
     }
     @media only screen and (max-width:1200px) {
+        .body {
+            height:calc(100% - 50px);
+        }
         .block {
             max-width:calc(100% - 70px);
             width:650px;
