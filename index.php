@@ -49,6 +49,7 @@
     <?php } ?>
     </select>
 </form>
+<div class="body">
 <?php if(file_exists("lists/" . $checklists[$current] . ".csv")) { ?>
     <?php $first = true; $checklist = preg_split('/\r\n|\r|\n/', file_get_contents("lists/" . $checklists[$current] . ".csv")); ?>
         <?php foreach($checklist as $check) { ?>
@@ -89,5 +90,6 @@
     <?php } ?>
     </ul>
 <?php } ?>
+</div>
 </body>
 </html>
