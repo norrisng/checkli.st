@@ -63,7 +63,7 @@
                     <div class="block">
                         <table>
                 <?php }?>
-                <span><i><?php echo $line[1]; ?></i></span>
+                <span><?php echo $line[1]; ?></span>
             <?php } else if($line[0] == "-INFO-") { ?>
                 <tr><td COLSPAN="3" style="text-align:center;"><br><i><?php echo $line[1]; ?></i><br><br></td></tr>
             <?php } else { ?>
