@@ -53,7 +53,7 @@ PWS,AUTO
 APU MASTER SW,ON
 APU START,ON
 -INFO-,Wait APU AVAIL
-EXT PWR ,OFF (AVAIL)
+EXT PWR,OFF (AVAIL)
 -INFO-,Disconnect EXT PWR
 -INFO-,Remove cones
 ANTI ICE,As Req.
@@ -85,7 +85,7 @@ LAND LT,ON
 NOSE LT,TO
 -GROUP-,Takeoff
 RWY TURN OFF,OFF
--INFO-,Check FCU Dash Dot, Dash Dot, Number, Dot
+-INFO-,Check FCU Dash Dot Dash Dot Number Dot
 -INFO-,Advance throttles to TOGA
 -INFO-,Check A/THR ON
 -INFO-,Wait V1
