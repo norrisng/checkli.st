@@ -4,7 +4,7 @@ body {
     text-align:center;
     font-family:'Source Sans Pro',sans-serif;
     font-weight:400;
-    padding:60px 200px 0px 200px;
+    padding:70px 200px 0px 200px;
     color:#312F30;
 }
 form {
@@ -39,7 +39,7 @@ ul {
         background-color:#FFF;
         display:inline-block;
         vertical-align:top;
-        margin:10px;
+        margin:20px;
         padding:10px;
         text-align:left;
         border:2px solid #312F30;
@@ -48,12 +48,12 @@ ul {
     }
     @media only screen and (min-width:1201px) {
         .block {
-            max-width:calc(50% - 50px);
+            max-width:calc(50% - 70px);
         }
     }
     @media only screen and (max-width:1200px) {
         .block {
-            max-width:calc(100% - 50px);
+            max-width:calc(100% - 70px);
         }
     }
     .block span {
