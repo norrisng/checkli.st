@@ -26,13 +26,12 @@ ul {
     border-bottom:2px solid #312F30;
     font-family:'Source Sans Pro',sans-serif;
     font-size:20px;
-    margin-bottom:5px;
-    position:fixed;
-    top:0;
-    left:0;
     color:#312F30;
-    z-index:+1;
     cursor:pointer;
+}
+.body {
+    height:calc(100% - 70px);
+    overflow-y:scroll;
 }
 .block {
         background-color:#FFF;
@@ -46,8 +45,8 @@ ul {
         position:relative;
     }
     @media only screen and (min-width:1201px) {
-        body {
-            padding:70px 200px 0px 200px;
+        .body {
+            padding:20px 200px 0px 200px;
         }
         .block {
             max-width:calc(50% - 70px);
