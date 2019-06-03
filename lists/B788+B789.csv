@@ -1,0 +1,207 @@
+-GROUP-,Before Flight
+TOWING POWER,ON
+PARKING BRAKE,SET
+BATTERY,ON
+APU GEN,Both OFF
+APU KNOB,OFF
+-INFO-,Connect EXT PWR
+FWD EXT PWR,ON
+TOWING POWER,OFF
+-INFO-,Adjust interior lighting as required
+IRS,Both ON
+LDG GEAR,DOWN
+FLAPS,UP
+SPEED BRAKE,RETRACTED
+FUEL CONTROL,OFF
+FUEL PUMPS,ALL OFF
+ANTI-ICE,AUTO
+WINDOW HEAT,ON
+FD DOOR POWER,ON
+EMER LIGHTS,ARM
+-INFO-,Set altimeter
+-INFO-,Begin boarding
+-INFO-,Check fuel quantity
+PASS SIGNS,AUTO
+-GROUP-,MCDU RTE
+Select ORIGIN,L1
+Select DEST,R1
+Select RUNWAY,L2
+Select FLT NO,R2
+-GROUP-,MCDU PERF INIT
+Select CRZ ALT,R1
+Select COST INDEX,R2
+-GROUP-,MCDU VNAV
+-INFO-,CLB page
+Select SPD RESTR,L4
+-INFO-,DES page
+Set SPD RESTR,L4
+-GROUP-,MCDU DEP/ARR
+Select DEP,L1
+Select RUNWAY,Rx
+Select SID,Lx
+Select ROUTE,R6
+-INFO-,Enter route by inputting airway in Lx and waypoint in Rx
+Activate ROUTE,EXEC
+-GROUP-,MCDU LEGS
+Select RTE DATA,R6
+Select WIND DATA REQUEST,R6
+-INFO-,Wait response received
+Select WIND DATA LOAD,R6
+Activate ROUTE,EXEC
+-GROUP-,Before Start
+AUTOBRAKE,RTO
+YAW DAMPER,ON
+HYDRAULIC ENG PUMP,Both ON
+HYDRAULIC ELEC PUMP,All AUTO
+AC PACKS,Both ON
+PRESSURISATION,AUTO
+EQUIP COOLING,AUTO
+FUEL PUMPS,L&R ON
+FUEL PUMPS,CENTER As Req.
+BEACON LT,ON
+WING LT,As Req.
+LOGO LT,As Req.
+XPDR,STBY
+-INFO-,Input SQWK
+-INFO-,Input takeoff performance data
+APU KNOB,START
+APU GEN,Both ON
+-INFO-,Wait APU RPM 100%
+-INFO-,Doors closed
+FWD EXT PWR,OFF
+-INFO-,Disconnect EXT PWR
+-GROUP-,Engine Start
+ENGINE START,START
+FUEL CONTROL,Both RUN
+-INFO-,Wait engines RUNNING
+APU KNOB,OFF
+TCAS,TA/RA
+-GROUP-,Before Taxi
+-INFO-,Input cleared altitude to FCU
+-INFO-,Check fuel quantity
+NAV LT,ON
+-GROUP-,Taxi
+TAXI LT,ON
+FCU F/D,Both ON
+-GROUP-,Before Takeoff
+FLAPS,TAKEOFF
+SPEED BRAKE,RETRACTED
+LANDING LT,All ON
+STROBE LT,ON
+RUNWAY TURNOFF LT,Both ON
+A/T ARM,Both ON
+FCU LNAV,ON
+FCU VNAV,ON
+-GROUP-,Takeoff
+RUNWAY TURNOFF LT,OFF
+-INFO-,Advance throttles to TOGA
+-INFO-,Wait V1
+-INFO-,Wait VR
+-INFO-,ROTATE
+-INFO-,Wait positive climb
+LDG GEAR,UP
+-GROUP-,After Takeoff
+XPDR,ON
+-INFO-,Wait 200kt
+FCU A/T,ON
+FCU A/P,ON
+FLAPS,As Req.
+AUTOBRAKE,OFF
+-INFO-,Check ENGINE START OFF
+WING LT,OFF
+LOGO LT,As Req.
+-INFO-,Wait 10000ft
+-INFO-,Push altimeter knob to set STD
+LANDING LT,All OFF
+TAXI LT,OFF
+-GROUP-,Before Descent
+ANTI-ICE,As Req.
+-INFO-,Check fuel quantity
+-GROUP-,MCDU DEP/ARR
+Select ARR,R2
+Select Runway,Rx
+Select STAR,Lx
+Activate ROUTE,EXEC
+-GROUP-,Descent
+-INFO-,Input descent altitude to FCU
+PASS SIGNS,ON
+ANTI-ICE,As Req.
+-INFO-,Check navigation displays
+-INFO-,Check TCAS
+-INFO-,Check engine instruments
+-INFO-,Check hydraulic systems
+-INFO-,Check fuel quantity
+WINDOW HEAT,As Req.
+-GROUP-,MCDU LEGS
+Select RTE DATA,R6
+Select WIND DATA REQUEST,R6
+-INFO-,Wait response received
+Select WIND DATA LOAD,R6
+Activate ROUTE,EXEC
+-GROUP-,Descent (Cont.)
+-INFO-,Input takeoff performance data
+AUTOBRAKE,As Req.
+-INFO-,Wait 10000ft
+LANDING LT,ON
+-INFO-,Set altimeter
+FCU LOC/FAC,ON
+-INFO-,FLAPS 1 at 250kt
+-INFO-,FLAPS 5 at 230kt
+-INFO-,FLAPS 15 at 215kt
+-INFO-,FLAPS 25 at 200kt
+-INFO-,FLAPS 30 at 180kt
+-INFO-,Wait localiser established
+FCU APP,ON
+-INFO-,Check engine instruments
+WG LT,As Req.
+LOGO LT,As Req.
+-GROUP-,Landing
+LDG GEAR,DOWN
+SPEED BRAKE,ARM
+-INFO-,A/T OFF at 500ft AGL
+-INFO-,A/P OFF at 300ft AGL
+-INFO-,Thrust reversers OFF at 70kt
+-INFO-,Manual breaking at 70kt
+AUTOBRAKE,OFF
+-GROUP-,Taxi
+XPDR,STBY
+SPEED BRAKE,RETRACTED
+FLAPS,UP
+TAXI LT,ON
+RUNWAY TURNOFF LT,ON
+LANDING LT,OFF
+STROBE LT,OFF
+RUNWAY TURNOFF LT,OFF
+FCU F/D,OFF
+APU KNOB,START
+-GROUP-,Before Shutdown
+NAV LT,OFF
+TAXI LT,OFF
+WG LT,OFF
+LOGO LT,OFF
+PARKING BRAKE,ON
+-GROUP-,Engine Shutdown
+FUEL CONTROL,OFF
+FUEL PUMPS,All OFF
+-INFO-,Connect EXT PWR
+HYDRAULIC ENG PUMP,Both OFF
+BEACON LT,OFF
+FWD EXT PWR,ON
+APU KNOB,OFF
+APU GEN,OFF
+PASS SIGNS,OFF
+-INFO-,Doors open
+-INFO-,Begin deboarding
+-GROUP-,Aircraft Secure
+ANTI-ICE,OFF
+PRESSURISATION,OFF
+AC PACKS,Both OFF
+EQUIP COOLING,All OFF
+WINDOW HEAT,All OFF
+HYDRAULIC ELEC PUMP,All OFF
+IRS,Both OFF
+FD DOOR PWR,OFF
+-INFO-,Interior lighting off
+FWD EXT PWR,OFF
+BATTERY,OFF
+-INFO-,Disconnect EXT PWR
