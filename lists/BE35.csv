@@ -32,14 +32,14 @@ AUX FUEL PUMP,ON
 AUX FUEL PUMP,OFF
 MIXTURE,60.00%
 IGNITION,START
--INFO-,"If engine doesn't start after 20 seconds, wait 10 seconds before trying again."
--INFO-,"If engine doesn't start after 3 attempts, go to Flooded Engine Start."
+-INFO-,If engine doesn't start after 20 seconds - wait 10 seconds before trying again.
+-INFO-,If engine doesn't start after 3 attempts - go to Flooded Engine Start.
 -GROUP-,Flooded Engine Start
 IGNITION,OFF
 THROTTLE,50.00%
 MIXTURE,0.00%
 IGNITION,START
--INFO-,"If engine doesn't start after 20 seconds, continue"
+-INFO-,If engine doesn't start after 20 seconds - continue
 IGNITION,OFF
 FUEL TANK,OFF
 IGNITION,START
@@ -94,7 +94,7 @@ STROBE LT,OFF
 TAXI LT,OFF
 NAV LT,OFF
 -GROUP-,Engine Shutdown
-MIXTURE ,LEAN
+MIXTURE,LEAN
 -INFO-,Wait for engine cutout
 THROTTLE,IDLE
 PROP PITCH,0.00%
