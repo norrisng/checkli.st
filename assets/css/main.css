@@ -4,7 +4,6 @@ body {
     text-align:center;
     font-family:'Source Sans Pro',sans-serif;
     font-weight:400;
-    padding:70px 200px 0px 200px;
     color:#312F30;
 }
 form {
@@ -47,6 +46,9 @@ ul {
         position:relative;
     }
     @media only screen and (min-width:1201px) {
+        body {
+            padding:70px 200px 0px 200px;
+        }
         .block {
             max-width:calc(50% - 70px);
         }
@@ -54,6 +56,7 @@ ul {
     @media only screen and (max-width:1200px) {
         .block {
             max-width:calc(100% - 70px);
+            width:650px;
         }
     }
     .block span {
