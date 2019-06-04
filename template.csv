@@ -1,0 +1,15 @@
+-GROUP-,Before Flight
+-GROUP-,Before Start
+-GROUP-,Engine Start
+-GROUP-,Before Taxi
+-GROUP-,Taxi
+-GROUP-,Before Takeoff
+-GROUP-,Takeoff
+-GROUP-,After Takeoff
+-GROUP-,Before Descent
+-GROUP-,Descent
+-GROUP-,Landing
+-GROUP-,Taxi
+-GROUP-,Before Shutdown
+-GROUP-,Engine Shutdown
+-GROUP-,Aircraft Secure
