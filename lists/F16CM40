@@ -1,0 +1,234 @@
+-GROUP-,VERIFY CHECK
+FUEL MASTER switch,MASTER (guard down)
+ENG FEED knob,NORM
+EPU switch,NORM (guard down)
+ENG CONT switch,PRI (guard down)
+Throttle,OFF
+LG handle,DN and locked
+HOOK switch,UP
+MASTER ARM switch,OFF/SIM
+AIR SOURCE knob,NORM
+-GROUP-,BEFORE STARTING ENGINE
+MAIN PWR switch,BATT
+-INFO-,Verify FLCS RLY light on
+FLCS PWR TEST switch,TEST and hold
+-INFO-,Verify lights on:
+-INFO-,ACFT BATT TO FLCS
+-INFO-,FLCS PMG
+-INFO-,FLCS PWR (4)
+-INFO-,Verify FLCS RLY light off
+FLCS PWR TEST switch,Release
+JFS RUN light,Check off
+MAIN PWR switch,MAIN PWR
+-INFO-,Verify lights on:
+-INFO-,ELEC SYS
+-INFO-,HYD/OIL PRESS
+-INFO-,FLCS RLY
+-INFO-,SEC
+-INFO-,ENGINE
+EPU GEN and EPU PMG lights,Confirm off
+Communications,Established
+Canopy,As desired
+-GROUP-,STARTING ENGINE
+JFS switch,START 2
+Throttle,Advance to IDLE at either 20% RPM or maximum motoring RPM
+SEC caution light,Off
+ENGINE warning light,Off (approx 60% RPM)
+-INFO-,Engine at idle and check:
+JFS switch,Confirm OFF
+HYD/OIL PRESS warning light,Off
+FUEL FLOW,700-1700 pph
+OIL pressure,15 psi (minimum)
+NOZ POS,Greater than 94%
+RPM,62-80%
+FTIT,650°C or less
+HYD PRESS A & B,2850-3250 psi
+-GROUP-,AFTER ENGINE START
+TEST switch panel,Check:
+PROBE HEAT switch,PROBE HEAT
+PROBE HEAT switch,TEST
+PROBE HEAT switch,OFF
+FIRE & OHEAT DETECT button,Test
+MAL & IND LTS button,Test
+SEC,Check (May be delayed until the BEFORE TAKEOFF check)
+ENG CONT switch,SEC
+SEC caution light,On
+RPM,Stabilized
+Throttle,Snap to MIL and then snap to IDLE when RPM reaches 85%. Check normal indications and smooth operation
+NOZ POS,5% or less within 30 seconds of selecting SEC
+ENG CONT switch,PRI
+SEC caution light,Off
+NOZ POS,Greater than 94%
+EPU GEN and EPU PMG lights,Confirm off
+EPU switch,OFF
+Ground safety pins,Remove
+EPU switch,NORM
+EPU,Check:
+ECM control panel,Power off
+EPU safety pin,Check removed
+OXYGEN,100%
+Engine RPM,Increase 10% above normal idle
+EPU/GEN TEST switch,EPU/GEN and hold
+-INFO-,Check lights
+EPU AIR light,On
+EPU GEN and EPU PMG lights,Off(may come on momentarily at start of test)
+FLCS PWR lights,On
+EPU run light,On for a minimum of 5 seconds
+EPU/GEN TEST switch,OFF
+Throttle,IDLE
+ECM control panel,Power as required
+AVIONICS POWER panel,Set
+MMC switch,MMC
+ST STA switch,ST STA
+MFD switch,MFD
+UFC switch,UFC
+EGI/INS,Align
+-INFO-,SNSR PWR panel:
+LEFT HDPT switch,As required
+RIGHT HDPT switch,As required
+FCR switch,FCR
+RDR ALT switch,RDR ALT
+HMCS SYMBOLOGY power knob,As desired
+HUD/ASHM,As desired
+C&I knob,UFC
+MFL,Clear
+Flight controls,Cycle
+FLCS BIT,Initiate and monitor
+ECM knobs,As required
+SPD BRK switch,Cycle
+TWS,As desired
+WHEELS down lights,Three green
+SAI,Set
+FUEL QTY SEL knob,Check
+-INFO-,TEST FR,AL 2000lbs, totalizer 6000lbs, FWD & AFT FUEL LOW caution lights
+-INFO-,NORM AL 2810lbs FR3250lbs
+-INFO-,RSVR 480lbs
+-INFO-,INT WING 550lbs
+-INOF-,EXT WING 2420lbs / 3925lbs
+-INFO-,EXT CTR FR 1890lbs AL 0
+FUEL QTY SEL knob,As desired
+EPU FUEL quantity,95-102%
+Avionics,Program as required and verify (manual or DTC):
+-INFO-,SMS
+-INFO-,Communications
+-INFO-,Steerpoints
+-INFO-,Profile data (including bingo fuel)
+-INFO-,MFD master mod data
+MFDs,As desired
+VHF radio,As desired
+-INFO-,After FLCS BIT completed:
+DBU,Check
+Trim,Check:
+TRIM/AP DISC switch,DISC
+Stick TRIM button,Activate in roll & pitch
+TRIM/AP DISC switch,NORM
+Stick TRIM button,Check and center
+YAW TRIM knob,check and center
+MPO,Check
+Operate controls,All surfaces respond normally, no FLCS lights on
+AR system (if required),Check
+Brakes,Check
+Avionics BITs,As desired
+OBOGS,Check (at least 2 minutes after engine start)
+-GROUP-,BEFORE TAXI
+Canopy,Close and lock
+Altimeter and altitude indications,Set and check
+Exterior lights,As required
+EGI/INS knob,NAV
+Chocks,Remove
+-GROUP-,TAXI
+Brakes and NWS,Check
+Heading,Check
+Flight instruments,Check for proper operation
+-GROUP-,BEFORE TAKEOFF
+ALT FLAPS switch,NORM
+Trim,Check pitch and yaw trim centered and roll trim as required
+ENG CONT switch,PRI (guard down)
+Speedbrakes,Closed
+Canopy,Close,lock,light off
+IFF,Set and check
+External tanks (if installed),Verify feeding
+FUEL QTY SEL knob,NORM
+STORES CONFIG switch,As required
+GND JETT ENABLE switch,As required
+PROBE HEAT switch,PROBE HEAT
+Ejection safety lever,Arm (down)
+Flight controls,Cycle
+OIL pressure,Check psi
+ALOW MSL FLOOR data,Check
+All warning and caution lights,Check
+-GROUP-,TAKEOFF
+-INFO-,NORMAL TAKEOFF
+Throttle,IDLE and check oil pressure
+Throttle,advance to 90%
+Park brake,Verify disengaged
+Engine instruments,Check for normal indications
+Brakes,release prior to exceeding 90% RPM
+Throttle,Advance to desired thrust
+-INFO-,Static runup check not required if conditions require a rolling takeoff
+-INFO-,Normal engine operation during MIL takeoff is indicated by NOZ POS 15% or less after 5 seconds at MIL
+-INFO-,Normal engine operation during AB takeoff is indicated by NOZ POS up to 10% more open than at MIL
+-INFO-,15 second spacing between AB takeoffs
+-INFO-,Rotate when airspeed is 10 knots (MIL) or 15 knots (AB) below computed takeoff speed. Do not apply aft stick at lower airspeeds than this
+-INFO-,Retract LG when safely airborne. Ensure LG is up and locked before exceeding 300 knots
+-GROUP-,OPERATING AIRSPEEDS BELOW 10,000 FEET MSL
+300-350,Point-to-point navigation and formation rejoins other than on departure. Descents into an MTR. Non-IAP descents into the terminal area. Tac initial. Route abort.
+35-400,Formation rejoins on departure
+400-450,Initial entry airspeed for g-awareness exercises
+-GROUP-,CLIMB
+-INFO-,See T.O. 1F-16CM-1-1
+-GROUP-,CLIMB/IN-FLIGHT/OPERATIONAL CHECKS
+Fuel,Check quantity/transfer/balance
+FUEL QTY SEL knob,NORM
+Oxygen system,Check
+Cockpit pressurization,Check
+Engine instruments,Check
+HYD PRESS A&B,Check
+-GROUP-,AIR REFUELING PROCEDURES
+-INFO-,Refer to T.o. 1-1C-1 for general AR procedures, and to T.O. 1F-16CM-1 Section VIII for specific AR procedures
+-GROUP-,DESCENT/BEFORE LANDING
+Fuel,Check quantity/transfer/balance
+Final approach airspeed,Compute
+Landing light,On
+Altimeter and altitude indications,Check
+Attitude references,Check ADI/HUD/SAI
+-GROUP-,LANDING
+-INFO-,NORMAL LANDING
+-INFO-,Fly initial at 300 knots.At the break, retard throttle and open speedbrakes as required. On downwind, when airspeed is below 300 knots, lower the LG. During base turn, recheck the LG down and slow to computed final approach airspeed to arrive on final at 11 to 13 degrees AOA. Check speedbrakes open and maintain computed final approach airspeed/AOA on final. Rate of descent decreases slightly when entering ground effect. Reduce thrust gradually to continue the descent while applying back stick to reduce sink rate to the minimum practical. Thrust can be reduced sooner during an 11 degree approach than during a 13 degree approach. In either case, maintain a maximum of 13 degrees AOA while reducing sink rate to the minimum practical.
+-INFO-,Use two point aerodynamic braking until approximately 100 knots, then fly the nosewheel to runway. maximum effective two point aerodynamic braking is achieved at 13 degrees AOA. An AOA less than 11 degrees results in significantly reduced two point aerodynamic braking. Although two point aerodynamic braking is effective as low as 80 knots, runway length and condition should be used to determine when, after decelerating to 100 knots, to lower the nose to the hree point attitude.
+-INFO-,After the nosewheel is on the runway, open the speedbrakes fully and maintain full aft stick for maximum three point aerodynamic braking and wheel braking effectiveness.
+-INFO-,Smoothly apply moderate to heavy braking to decelerate to taxi speed. Using less than moderate braking increases the likelihood of a hot brake(s). NWS should not be engaged above taxi speed unless required to prevent departure from prepared runway surface.
+-GROUP-,AFTER LANDING
+-INFO-,Do not use parking brake within 30 minutes after a normal landing. Use only chocks, if available, or minimum possibly pressure to hld the aircraft stationary. 
+PROBE HEAT switch,OFF
+ECM Power,Off
+Speedbrakes,Close
+Ejection safety lever,Safe(up)
+IFF MASTER knob,STBY
+IFF M-4 CODE switch,HOLD
+LANDING TAXI lights switch,As required
+ZEROIZE switch,As required
+Canopy handle,Up
+Armament switches,Off,safe, or normal
+-GROUP-,PRIOR TO ENGINE SHUTDOWN
+EPU safety pin,In
+EGI/INS,Check
+MFL,Record (as required)
+AVTR power switch,UNTHRD
+C&I knob,BACKUP
+TWS switches,OFF
+EGI/INS knob,OFF
+Avionics,OFF:
+-INFO-,HUD/ASHM
+-INFO-,SNSR PWR switches
+-INFO-,AVIONICS POWER switches
+-INFO-,HMCS SYMBOLOGY INT knob
+-INFO-,COMM radios
+-GROUP-,ENGINE SHUTDOWN
+Throttle,OFF
+JFS RUN light,Check
+-INFO-,After main generator drops offline:
+EPU GEN and EPU PMG lights,Confirm off
+MAIN PWR switch,OFF
+OXYGEN regulator,OFF and 100%
+Canopy,Open
