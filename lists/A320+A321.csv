@@ -106,6 +106,10 @@ EXT LT,As Req.
 -INFO-,Pull altimeter knob to set STD
 -GROUP-,Before Descent
 AUTO BRK,As Req.
+-GROUP-,MCDU F-PLN
+Select ARRIVAL,L1
+Select RWY,Lx
+Select SID,Lx
 -GROUP-,MCDU PERF
 -INFO-,Set ARR phase
 QNH,L1
