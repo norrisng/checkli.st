@@ -109,7 +109,7 @@ AUTO BRK,As Req.
 -GROUP-,MCDU F-PLN
 Select ARRIVAL,L1
 Select RWY,Lx
-Select SID,Lx
+Select STAR,Lx
 -GROUP-,MCDU PERF
 -INFO-,Set ARR phase
 QNH,L1
