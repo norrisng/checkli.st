@@ -34,7 +34,7 @@ Select COST INDEX,R2
 -INFO-,CLB page
 Select SPD RESTR,L4
 -INFO-,DES page
-Set SPD RESTR,L4
+Select SPD RESTR,L4
 -GROUP-,MCDU DEP/ARR
 Select DEP,L1
 Select RUNWAY,Rx
