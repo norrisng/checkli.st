@@ -1,6 +1,6 @@
 -GROUP-,Before Flight
 GANGWAY,ENABLE
--INFO-,Check doors open
+-INFO-,Doors open
 PARKING BRK,ON
 EXT PWR,ON
 BAT,Both ON
@@ -160,7 +160,7 @@ ENG 1 MASTER,OFF
 PARKING BRK,OFF
 FUEL PUMPS,OFF
 SEAT BELTS,OFF
--INFO-,Check doors open
+-INFO-,Doors open
 GANGWAY,ENABLE
 BEACON,OFF
 -INFO-,Connect EXT PWR
