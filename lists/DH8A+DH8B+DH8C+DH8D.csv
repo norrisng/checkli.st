@@ -1,7 +1,5 @@
-"-GROUP-
-",Before Flight
-"EMERG BRAKE
-",PARK
+-GROUP-,Before Flight
+EMERG BRAKE,PARK
 BATTERY MASTER,ON
 MAIN BATT,ON
 AUX BATT,ON
@@ -38,13 +36,11 @@ CONTROL LOCK,ON
 POWER,DISC
 PROP,FUEL OFF
 -INFO-,Set trims
-"-GROUP-
-",MCDU FUEL
+-GROUP-,MCDU FUEL
 Select PAX,L2
 Select CARGO,L3
 Select FUEL,R5
-"-GROUP-
-",MCDU FPL
+-GROUP-,MCDU FPL
 -INFO-,Select MCDU MENU
 Select DEPART,L4
 Select AIRPORT,R1
@@ -52,8 +48,7 @@ Select RUNWAY,R2
 Select SID,R3
 Select FPL,R5
 -INFO-,Enter route by selecting blank area and inputting waypoint OR selecting MCDU LIST then AIR
-"-GROUP-
-",Before Start
+-GROUP-,Before Start
 -INFO-,Input SQWK
 XPDR,STBY
 -INFO-,Press TO/GA button on side of power levers
@@ -75,8 +70,7 @@ EXT PWR,OFF
 -INFO- ,Disconnect EXT PWR
 WINDSHIELF HEAT,As Req.
 PLT SIDE WDO/HT,As Req.
-"-GROUP-
-",Engine Start
+-GROUP-,Engine Start
 ENGINE START SELECT,2
 PROP,2 START
 ENGINE START,PUSH
@@ -93,8 +87,7 @@ ENGINE START,PUSH
 -INFO-,Wait START SELECT light OFF
 APU PWR,OFF
 APU GEN,OFF
-"-GROUP-
-",After Start
+-GROUP-,After Start
 MAIN BUS TIE,OFF
 -INFO-,Check electrical panels
 PROP,MAX
@@ -106,36 +99,29 @@ NOSE STEERING,ON
 BLEED,Both ON & MIN
 ICE PROTECTION,TEST
 ICE PROTECTION,As Req.
-"-GROUP-
-",Before Taxi
+-GROUP-,Before Taxi
 TAXI LT,ON
-"-GROUP-
-",Taxi
-"EMERG BRAKE
-",OFF
+-GROUP-,Taxi
+EMERG BRAKE,OFF
 -INFO-,Check flight controls
 -INFO-,Check flight instruments
 -INFO-,Test takeoff warning
 CONTROL LOCK,OFF
 -INFO-,Test brakes
-"-GROUP-
-",Before Takeoff
-"EMERG BRAKE
-",PARK
+-GROUP-,Before Takeoff
+EMERG BRAKE,PARK
 PITOT STATIC,All ON
 ICE PROTECTION,As Req.
 FLAPS,As Req.
 SPOILERS,FLIGHT
 -INFO-,Press FCU HDG 2 times to reset FD
 -INFO-,Check caution panel clear
--INFO-,"Check PFD showing GA, HDG, ALT SEL"
+-INFO-,Check PFD showing GA - HDG - ALT SEL
 XPDR,ON
 LANDING LT,ON
 A/COL LT,WHITE
-"-GROUP-
-",Takeoff
-"EMERG BRAKE
-",OFF
+-GROUP-,Takeoff
+EMERG BRAKE,OFF
 TAXI LT,OFF
 -INFO-,Advance POWER to TOGA
 -INFO-,Wait V1
@@ -144,8 +130,7 @@ TAXI LT,OFF
 -INFO-,Wait positive climb
 -INFO-,Touch brakes
 LANDING GEAR,UP
-"-GROUP-
-",After Takeoff
+-GROUP-,After Takeoff
 -INFO-,Check 3 greens
 -INFO-,Wait 1000ft AGL
 FLAPS,0
@@ -167,15 +152,12 @@ ARCDU,CHIME
 LANDING LT,OFF
 EXT LT,As Req.
 FASTEN BELTS,OFF
-"-GROUP-
-",Cruise
+-GROUP-,Cruise
 PROP,850
 -INFO-,Set POWER 240-260kt
-"-GROUP-
-",Before Descent
+-GROUP-,Before Descent
 -INFO-,Choose waypoint to descend to
-"-GROUP-
-",MCDU FPL
+-GROUP-,MCDU FPL
 -INFO-,Select MCDU MENU
 Select ARRIVE,R4
 Select AIRPORT,R1
@@ -185,19 +167,16 @@ Select APPR,R4
 Select FPL,R5
 -INFO-,Select waypoint to descend to
 Select ALT,Rx
-"-GROUP-
-",MCDU VNAV
+-GROUP-,MCDU VNAV
 Select VTO,R5
 Select waypoint,Lx
 Select TGT V/S,R1
-"-GROUP-
-",Before Descent (Cont.)
+-GROUP-,Before Descent (Cont.)
 -INFO-,Input descent altitude to FCU
 GWPS LANDING FLAP,As Req.
 -INFO-,Input V-Speeds
 -INFO-,Input MDA/DH
-"-GROUP-
-",Descent
+-GROUP-,Descent
 FCU VNAV/VS,As Req.
 -INFO-,Set POWER 230kt
 -INFO-,Wait 10000ft 
@@ -218,16 +197,14 @@ PTU CNTRL,OFF
 -INFO-,FLAPS 15 at 172kt
 -INFO-,FLAPS 35 at 158kt
 FCU APPR,PUSH
-"-GROUP-
-",Landing
+-GROUP-,Landing
 LANDING GEAR,DOWN
 -INFO-,Check 3 greens
 PROP,MAX
 BLEEDS,MIN
 -INFO-,Wait decision height
 A/P DISC,PUSH
-"-GROUP-
-",Taxi
+-GROUP-,Taxi
 LANDING LT,OFF
 A/COL LT,RED
 SPOILERS,TAXI
@@ -246,14 +223,11 @@ APU START,ON
 -INFO-,Wait APU RUN
 APU GEN,ON
 MAIN BUS TIE,TIE
-"-GROUP-
-",Before Shutdown
+-GROUP-,Before Shutdown
 TAXI LT,OFF
 EXT LT,OFF
-"EMERG BRAKE
-",PARK
-"-GROUP-
-",Engine Shutdown
+EMERG BRAKE,PARK
+-GROUP-,Engine Shutdown
 PROP,Both START
 STBY HDR PRESS,OFF
 PTU CNTRL,OFF
@@ -271,8 +245,7 @@ APU GEN,OFF
 ICE PROTECTION,OFF
 WINDSHIELF HEAT,OFF
 PLT SIDE WDO/HT,OFF
-"-GROUP-
-",Aircraft Secure
+-GROUP-,Aircraft Secure
 EXT LT,OFF
 INT LT,OFF
 RADIOS,OFF
