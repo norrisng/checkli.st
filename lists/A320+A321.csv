@@ -104,6 +104,7 @@ LDG LT,OFF
 NOSE LT,OFF
 EXT LT,As Req.
 -INFO-,Pull altimeter knob to set STD
+SEAT BELTS,ON
 -GROUP-,Before Descent
 AUTO BRK,As Req.
 -GROUP-,MCDU F-PLN
