@@ -5,6 +5,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   color: #312f30;
+  height: 100%;
 }
 form {
   margin: 0;
