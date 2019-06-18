@@ -1,0 +1,284 @@
+"-GROUP-
+",Before Flight
+"EMERG BRAKE
+",PARK
+BATTERY MASTER,ON
+MAIN BATT,ON
+AUX BATT,ON
+STBY BATT,ON
+MAIN BUS TIE,TIE
+-INFO-,Connect EXT PWR
+EXT PWR,ON
+-INFO-,Adjust interior lighting as required
+-INFO-,Doors open
+-INFO-,Check safety equipment
+-INFO-,Check landing gear lights and pins
+ENGINE INTAKE,CLOSED
+-INFO-,Check circuit breakers in
+RADIOS,ON/FMS
+-INFO-,Check DC EXT PWR
+-INFO-,Set LDG ALT
+ENGINE START,Both NORM
+PACKS,Both AUTO
+RECIRC,ON
+BLEED,OFF & MIN
+TEMP CONTROL,As Req.
+PASSENGER SIGNS,ON
+EMER LIGHTS,ARM
+-INFO-,Set altimeter
+-INFO-,Begin boarding
+-INFO-,Check fuel quantity
+SIDE VENTS/DEMIST,OPEN
+NOSE STEERING,OFF
+SPOILERS,TAXI
+FCU YD,ON
+FCU HDG,PUSH
+ANTI SKID,ON
+CONTROL LOCK,ON
+POWER,DISC
+PROP,FUEL OFF
+-INFO-,Set trims
+"-GROUP-
+",MCDU FUEL
+Select PAX,L2
+Select CARGO,L3
+Select FUEL,R5
+"-GROUP-
+",MCDU FPL
+-INFO-,Select MCDU MENU
+Select DEPART,L4
+Select AIRPORT,R1
+Select RUNWAY,R2
+Select SID,R3
+Select FPL,R5
+-INFO-,Enter route by selecting blank area and inputting waypoint OR selecting MCDU LIST then AIR
+"-GROUP-
+",Before Start
+-INFO-,Input SQWK
+XPDR,STBY
+-INFO-,Press TO/GA button on side of power levers
+FCU NAV SOURCE,FMS 1
+-INFO-,Input RWY HDG to FCU
+-INFO-,Input cleared altitude to FCU
+FCU ALT SEL,PUSH
+-INFO-,Input MDA
+-INFO-,Input V-Speeds
+-INFO-,Set NAV frequencies as required
+APU PWR,ON
+APU START,ON
+-INFO-,Wait APU RUN
+A/COL LT,RED
+EXT LT,As Req.
+APU GEN,ON
+-INFO-,Doors closed
+EXT PWR,OFF
+-INFO- ,Disconnect EXT PWR
+WINDSHIELF HEAT,As Req.
+PLT SIDE WDO/HT,As Req.
+"-GROUP-
+",Engine Start
+ENGINE START SELECT,2
+PROP,2 START
+ENGINE START,PUSH
+-INFO-,Check ITT max 920
+-INFO-,Check NH > 64.2%
+-INFO-,Check OIL PRESS > 44psi
+-INFO-,Wait START SELECT light OFF
+ENGINE START SELECT,1
+PROP,1 START
+ENGINE START,PUSH
+-INFO-,Check ITT max 920
+-INFO-,Check NH > 64.2%
+-INFO-,Check OIL PRESS > 44psi
+-INFO-,Wait START SELECT light OFF
+APU PWR,OFF
+APU GEN,OFF
+"-GROUP-
+",After Start
+MAIN BUS TIE,OFF
+-INFO-,Check electrical panels
+PROP,MAX
+AUTOFEATHER,SELECT
+AUX FUEL PUMP,Both ON
+STBY HDR PRESS,ON
+PTU CNTRL,ON
+NOSE STEERING,ON
+BLEED,Both ON & MIN
+ICE PROTECTION,TEST
+ICE PROTECTION,As Req.
+"-GROUP-
+",Before Taxi
+TAXI LT,ON
+"-GROUP-
+",Taxi
+"EMERG BRAKE
+",OFF
+-INFO-,Check flight controls
+-INFO-,Check flight instruments
+-INFO-,Test takeoff warning
+CONTROL LOCK,OFF
+-INFO-,Test brakes
+"-GROUP-
+",Before Takeoff
+"EMERG BRAKE
+",PARK
+PITOT STATIC,All ON
+ICE PROTECTION,As Req.
+FLAPS,As Req.
+SPOILERS,FLIGHT
+-INFO-,Press FCU HDG 2 times to reset FD
+-INFO-,Check caution panel clear
+-INFO-,"Check PFD showing GA, HDG, ALT SEL"
+XPDR,ON
+LANDING LT,ON
+A/COL LT,WHITE
+"-GROUP-
+",Takeoff
+"EMERG BRAKE
+",OFF
+TAXI LT,OFF
+-INFO-,Advance POWER to TOGA
+-INFO-,Wait V1
+-INFO-,Wait VR
+-INFO-,ROTATE
+-INFO-,Wait positive climb
+-INFO-,Touch brakes
+LANDING GEAR,UP
+"-GROUP-
+",After Takeoff
+-INFO-,Check 3 greens
+-INFO-,Wait 1000ft AGL
+FLAPS,0
+FCU AP,ON
+FCU IAS,PRESS
+-INFO-,Input climb speed to FCU
+PROP,900
+BLEEDS,NORM
+FCU AP,NAV
+STBY HDR PRESS,OFF
+PTU CNTRL,OFF
+AUX FUEL PUMP,Both OFF
+AUTOFEATHER,OFF
+ICE PROTECTION,As Req.
+WX RDR,ON
+ARCDU,CHIME
+-INFO-,Wait 10000ft
+-INFO-,Push altimeter knob to set STD
+LANDING LT,OFF
+EXT LT,As Req.
+FASTEN BELTS,OFF
+"-GROUP-
+",Cruise
+PROP,850
+-INFO-,Set POWER 240-260kt
+"-GROUP-
+",Before Descent
+-INFO-,Choose waypoint to descend to
+"-GROUP-
+",MCDU FPL
+-INFO-,Select MCDU MENU
+Select ARRIVE,R4
+Select AIRPORT,R1
+Select RUNWAY,R2
+Select STAR,R3
+Select APPR,R4
+Select FPL,R5
+-INFO-,Select waypoint to descend to
+Select ALT,Rx
+"-GROUP-
+",MCDU VNAV
+Select VTO,R5
+Select waypoint,Lx
+Select TGT V/S,R1
+"-GROUP-
+",Before Descent (Cont.)
+-INFO-,Input descent altitude to FCU
+GWPS LANDING FLAP,As Req.
+-INFO-,Input V-Speeds
+-INFO-,Input MDA/DH
+"-GROUP-
+",Descent
+FCU VNAV/VS,As Req.
+-INFO-,Set POWER 230kt
+-INFO-,Wait 10000ft 
+-INFO-,Set altimeter
+LANDING LT,ON
+TAXI LT,ON
+EXT LT,As Req.
+FASTEN BELTS,ON
+ICE PROTECTION,As Req.
+-INFO-,Set NAV frequencies as required
+FUEL TRANSFER,OFF
+AUX FUEL PUMP,Both ON
+STBY HDR PRESS,OFF
+PTU CNTRL,OFF
+-INFO-,Check caution panel clear
+-INFO-,FLAPS 5 at 200kt
+-INFO-,FLAPS 10 at 181kt
+-INFO-,FLAPS 15 at 172kt
+-INFO-,FLAPS 35 at 158kt
+FCU APPR,PUSH
+"-GROUP-
+",Landing
+LANDING GEAR,DOWN
+-INFO-,Check 3 greens
+PROP,MAX
+BLEEDS,MIN
+-INFO-,Wait decision height
+A/P DISC,PUSH
+"-GROUP-
+",Taxi
+LANDING LT,OFF
+A/COL LT,RED
+SPOILERS,TAXI
+CONTROL LOCK,ON
+FLAPS,0
+AUX FUEL PUMP,Both OFF
+ICE PROTECTION,As Req.
+WINDSHIELF HEAT,As Req.
+PLT SIDE WDO/HT,As Req.
+FCU YD,OFF
+PITOT STATIC,All OFF
+XPDR,STBY
+WX RDR,OFF
+APU PWR,ON
+APU START,ON
+-INFO-,Wait APU RUN
+APU GEN,ON
+MAIN BUS TIE,TIE
+"-GROUP-
+",Before Shutdown
+TAXI LT,OFF
+EXT LT,OFF
+"EMERG BRAKE
+",PARK
+"-GROUP-
+",Engine Shutdown
+PROP,Both START
+STBY HDR PRESS,OFF
+PTU CNTRL,OFF
+POWER,DISC
+NOSE STEERING,OFF
+BLEEDS,OFF & MIN
+PROP,FUEL OFF
+FASTEN BELTS,OFF
+-INFO-,Doors open
+A/COL LT,OFF
+-INFO-,Connect EXT PWR
+EXT PWR,ON
+APU PWR,OFF
+APU GEN,OFF
+ICE PROTECTION,OFF
+WINDSHIELF HEAT,OFF
+PLT SIDE WDO/HT,OFF
+"-GROUP-
+",Aircraft Secure
+EXT LT,OFF
+INT LT,OFF
+RADIOS,OFF
+NO SMOKING,OFF
+EMER LIGHTS,OFF
+MAIN BATT,ON
+AUX BATT,ON
+STBY BATT,ON
+BATTERY MASTER,ON
