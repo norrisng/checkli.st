@@ -67,7 +67,7 @@ EXT LT,As Req.
 APU GEN,ON
 -INFO-,Doors closed
 EXT PWR,OFF
--INFO- ,Disconnect EXT PWR
+-INFO-,Disconnect EXT PWR
 WINDSHIELF HEAT,As Req.
 PLT SIDE WDO/HT,As Req.
 -GROUP-,Engine Start
