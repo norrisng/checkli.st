@@ -178,6 +178,7 @@ GWPS LANDING FLAP,As Req.
 -INFO-,Wait 2 minutes from TOD
 FCU VNAV,PUSH
 -INFO-,Check PFD showing LNAV - ALT - VNAV
+-INFO-,Wait TOD
 -INFO-,Set POWER 230kt
 -INFO-,Wait 10000ft 
 -INFO-,Set altimeter
