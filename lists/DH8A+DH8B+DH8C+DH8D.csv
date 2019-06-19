@@ -155,8 +155,6 @@ FASTEN BELTS,OFF
 -GROUP-,Cruise
 PROP,850
 -INFO-,Set POWER 240-260kt
--GROUP-,Before Descent
--INFO-,Choose waypoint to descend to
 -GROUP-,MCDU FPL
 -INFO-,Select MCDU MENU
 Select ARRIVE,R4
@@ -171,13 +169,19 @@ Select ALT,Rx
 Select VTO,R5
 Select waypoint,Lx
 Select TGT V/S,R1
--GROUP-,Before Descent (Cont.)
+-GROUP-,Before Descent
 -INFO-,Input descent altitude to FCU
 GWPS LANDING FLAP,As Req.
 -INFO-,Input V-Speeds
 -INFO-,Input MDA/DH
--GROUP-,Descent
-FCU VNAV/VS,As Req.
+-GROUP-,VNAV Descent
+-INFO-,Wait VNAV on PFD
+FCU VNAV,PUSH
+-GROUP-,Manual Descent
+-INFO-,Wait TOD
+FCU VS,PUSH
+-INFO-,Input vertical speed to FCU
+-GROUP-,Descent (Cont.)
 -INFO-,Set POWER 230kt
 -INFO-,Wait 10000ft 
 -INFO-,Set altimeter
