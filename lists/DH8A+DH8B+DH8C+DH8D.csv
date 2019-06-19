@@ -174,14 +174,9 @@ Select TGT V/S,R1
 GWPS LANDING FLAP,As Req.
 -INFO-,Input V-Speeds
 -INFO-,Input MDA/DH
--GROUP-,VNAV Descent
--INFO-,Wait VNAV on PFD
+-GROUP-,Descent
+-INFO-,Wait 2 minutes from TOD
 FCU VNAV,PUSH
--GROUP-,Manual Descent
--INFO-,Wait TOD
-FCU VS,PUSH
--INFO-,Input vertical speed to FCU
--GROUP-,Descent (Cont.)
 -INFO-,Set POWER 230kt
 -INFO-,Wait 10000ft 
 -INFO-,Set altimeter
