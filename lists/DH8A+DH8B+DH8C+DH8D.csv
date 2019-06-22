@@ -131,7 +131,7 @@ TAXI LT,OFF
 -INFO-,Touch brakes
 LANDING GEAR,UP
 -GROUP-,After Takeoff
--INFO-,Check 3 greens
+-INFO-,Check gear up
 -INFO-,Wait 1000ft AGL
 FLAPS,0
 FCU AP,ON
@@ -195,13 +195,14 @@ STBY HDR PRESS,OFF
 PTU CNTRL,OFF
 -INFO-,Check caution panel clear
 -INFO-,FLAPS 5 at 200kt
+-INFO-,Before Flaps 10
+LANDING GEAR,DOWN
+-INFO-,Check gear down
 -INFO-,FLAPS 10 at 181kt
 -INFO-,FLAPS 15 at 172kt
 -INFO-,FLAPS 35 at 158kt
 FCU APPR,PUSH
 -GROUP-,Landing
-LANDING GEAR,DOWN
--INFO-,Check 3 greens
 PROP,MAX
 BLEEDS,MIN
 -INFO-,Wait decision height
@@ -225,10 +226,11 @@ APU START,ON
 -INFO-,Wait APU RUN
 APU GEN,ON
 MAIN BUS TIE,TIE
--GROUP-,Before Shutdown
+-INFO-,Before turning into parking bay
 TAXI LT,OFF
 POSN LT,OFF
 LOGO LT,OFF
+-GROUP-,Before Shutdown
 EMERG BRAKE,PARK
 -GROUP-,Engine Shutdown
 PROP,Both START
