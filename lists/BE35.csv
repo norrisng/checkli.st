@@ -8,7 +8,7 @@ FLAPS,UP
 AUX FUEL PUMP,OFF
 MIXTURE,LEAN
 THROTTLE,IDLE
-PROP PITCH,0.00%
+PROP PITCH,0%
 COWL FLAP,OPEN
 LIGHTS,OFF
 -GROUP-,Before Start
@@ -24,20 +24,20 @@ XPDR,SBY
 -INFO-,Set frequencies as required
 -GROUP-,Engine Start
 FUEL TANK,L/R
-PROP PITCH,100.00%
-MIXTURE,90.00%
-THROTTLE,50.00%
+PROP PITCH,100%
+MIXTURE,90%
+THROTTLE,50%
 AUX FUEL PUMP,ON
 -INFO-,Wait until fuel flow in green
 AUX FUEL PUMP,OFF
-MIXTURE,60.00%
+MIXTURE,60%
 IGNITION,START
 -INFO-,If engine doesn't start after 20 seconds - wait 10 seconds before trying again.
 -INFO-,If engine doesn't start after 3 attempts - go to Flooded Engine Start.
 -GROUP-,Flooded Engine Start
 IGNITION,OFF
-THROTTLE,50.00%
-MIXTURE,0.00%
+THROTTLE,50%
+MIXTURE,0%
 IGNITION,START
 -INFO-,If engine doesn't start after 20 seconds - continue
 IGNITION,OFF
@@ -77,7 +77,7 @@ LAND LT,OFF
 -GROUP-,Cruise
 -INFO-,Adjust PROP PITCH to maintain 2100-2300RPM
 -GROUP-,Before Landing
-PROP PITCH,100.00%
+PROP PITCH,100%
 LAND LT,ON
 -GROUP-,Landing
 -INFO-,Wait 120kt
@@ -97,7 +97,7 @@ NAV LT,OFF
 MIXTURE,LEAN
 -INFO-,Wait for engine cutout
 THROTTLE,IDLE
-PROP PITCH,0.00%
+PROP PITCH,0%
 RADIO 1,OFF
 RADIO 2,OFF
 NAV,OFF
