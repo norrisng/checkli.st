@@ -107,10 +107,10 @@ EMERG BRAKE,OFF
 -INFO-,Check flight controls
 -INFO-,Check flight instruments
 -INFO-,Test takeoff warning
-CONTROL LOCK,OFF
 -INFO-,Test brakes
 -GROUP-,Before Takeoff
 EMERG BRAKE,PARK
+CONTROL LOCK,OFF
 PITOT STATIC,All ON
 ICE PROTECTION,As Req.
 FLAPS,As Req.
