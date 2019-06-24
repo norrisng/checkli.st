@@ -86,8 +86,8 @@ ENGINE START,PUSH
 -INFO-,Check NH > 64%
 -INFO-,Check OIL PRESS > 44psi
 -INFO-,Wait START SELECT light OFF
-APU PWR,OFF
 APU GEN,OFF
+APU PWR,OFF
 -GROUP-,After Start
 MAIN BUS TIE,OFF
 -INFO-,Check electrical panels
