@@ -106,7 +106,7 @@ foreach (glob("lists/*.csv") as $filename) {
     <h3>Current Aircraft Supported:</h3><br>
     <ul>
     <?php foreach ($checklists as $key => $item) { ?>
-        <li><a href="https://eparker.me/?l=<?php echo $key; ?>"><?php echo $key; ?></a></li>
+        <li><a href="https://checklist.eparker.me/?l=<?php echo $key; ?>"><?php echo $key; ?></a></li>
     <?php } ?>
     </ul>
 <?php } ?>
