@@ -104,7 +104,7 @@ LDG LT,OFF
 NOSE LT,OFF
 EXT LT,As Req.
 -INFO-,Pull altimeter knob to set STD
-SEAT BELTS,ON
+SEAT BELTS,OFF
 -GROUP-,Before Descent
 AUTO BRK,As Req.
 -GROUP-,MCDU F-PLN
@@ -119,6 +119,7 @@ MAG WIND,L3
 DECISION HEIGHT,R3
 -GROUP-,Descent
 -INFO-,Set descent height in FCU
+SEAT BELTS,ON
 -INFO-,Press FCU ALT knob inward at T/D
 -INFO-,Wait 10000ft
 LAND LT,ON
