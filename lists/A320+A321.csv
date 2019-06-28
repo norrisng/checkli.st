@@ -135,9 +135,9 @@ EXT LT,As Req.
 -INFO-,Wait LOC established
 -INFO-,FCU APPR ON
 -GROUP-,Landing
+GND SPLR,ARM
 LDG GEAR,DOWN
 -INFO-,Check 3 greens
-GND SPLR,ARM
 -INFO-,Thrust reversers OFF at 60kt
 -GROUP-,Taxi
 XPDR,STBY
