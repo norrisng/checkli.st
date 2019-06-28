@@ -33,7 +33,7 @@ FLAPS,R3
 -INFO-,Check V-speeds automatically entered
 FLEX TEMP,R4 As Req.
 -GROUP-,Before Start
-FUEL PUMPS,ON
+FUEL PUMPS,All ON
 -INFO-,Set altimeter
 SEAT BELTS,ON
 NO SMOKING,AUTO
