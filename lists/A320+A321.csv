@@ -65,7 +65,7 @@ ENG 2 MASTER,ON
 -INFO-,Check ENG 2 N2 rising
 -INFO-,Wait GEN 2 FAULT extinguished
 ENG 1 MASTER,ON
--INFO-,Check ENG 2 N2 rising
+-INFO-,Check ENG 1 N2 rising
 -INFO-,Wait GEN 1 FAULT extinguished
 ENG MODE,NORMAL
 APU BLEED,OFF
