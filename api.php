@@ -31,7 +31,7 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
         $group = array();
         $group['group'] = $line_data[1];
       } else {
-        array_push($list_data, $group);
+        array_push($list_data['groups'], $group);
         $group = [];
         $group['group'] = $line_data[1];
       }
@@ -44,7 +44,7 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
       array_push($group['content'], $line);
     }
   }
-  array_push($list_data, $group);
+  array_push($list_data['groups'], $group);
 }
 
 echo "<pre>";
