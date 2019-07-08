@@ -41,9 +41,10 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
       array_push($group['content'], [$line[0], $line[1]]);
     }
   }
+  array_push($list_data, $group);
 }
 
 echo "<pre>";
-print_r($photos);
+print_r($list_data);
 echo "</pre>";
 // echo json_encode($photos);
