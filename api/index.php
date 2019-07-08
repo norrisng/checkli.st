@@ -35,13 +35,9 @@ if (file_exists("../lists/" . $checklists[$current] . ".csv")) {
         $group = [];
         $group['group'] = $line[1];
       }
-    } elseif ($line[0] == "-INFO-") {
-      array_push($group['content'], ['-INFO-', $line[1]]);
-    } else {
-      array_push($group['content'], [$line[0], $line[1]]);
     }
   }
-  array_push($list_data, $group);
+  //   array_push($list_data, $group);
 }
 
 echo "<pre>";
