@@ -23,8 +23,11 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
     '/\r\n|\r|\n/',
     file_get_contents("lists/" . $checklists[$current] . ".csv")
   );
+
   foreach ($lines as $line) {
     $line_data = explode(",", $line);
+    print_r($line_data);
+
     if ($line_data[0] == "-GROUP-") {
       if ($first == true) {
         $first = false;
