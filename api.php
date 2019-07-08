@@ -46,6 +46,11 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
         "type" => "info",
         "content" => $line_data[1]
       ));
+    } else {
+      array_push($group_data['content'], array(
+        "type" => "check",
+        "content" => array($line_data[0], $line_data[1])
+      ));
     }
   }
   array_push($list_data['groups'], $group_data);
