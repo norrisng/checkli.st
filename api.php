@@ -23,20 +23,20 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
     '/\r\n|\r|\n/',
     file_get_contents("lists/" . $checklists[$current] . ".csv")
   );
-  foreach ($checklist as $check) {
-    $line = explode(",", $check);
-    if ($line[0] == "-GROUP-") {
+  foreach ($checklist as $line) {
+    $line_data = explode(",", $line);
+    if ($line_data[0] == "-GROUP-") {
       if ($first == true) {
         $first = false;
         $group = array();
-        $group['group'] = $line[1];
+        $group['group'] = $line_data[1];
       } else {
         array_push($list_data, $group);
         $group = [];
-        $group['group'] = $line[1];
+        $group['group'] = $line_data[1];
       }
     } else {
-      array_push($group['content'], $line);
+      array_push($group['content'], $line_data);
     }
   }
   array_push($list_data, $group);
