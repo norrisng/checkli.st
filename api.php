@@ -41,7 +41,7 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
 }
 
 echo "<pre>";
-print_r($checklists);
+print_r($list_data);
 echo "</pre>";
 // echo json_encode($photos);
 ?>
