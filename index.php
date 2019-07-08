@@ -66,10 +66,10 @@ foreach (glob("lists/*.csv") as $filename) {
       file_get_contents("lists/" . $checklists[$current] . ".csv")
     );
     ?>
-        <?php foreach ($checklist as $check) { ?>
+        <?php foreach ($checklist as $line) { ?>
             <?php
-            $line = explode(",", $check);
-            if ($line[0] == "-GROUP-") { ?>
+            $line_data = explode(",", $line);
+            if ($line_data[0] == "-GROUP-") { ?>
                 <?php if ($first == true) {
                   $first = false; ?>
                     <div class="block">
@@ -83,11 +83,11 @@ foreach (glob("lists/*.csv") as $filename) {
                         <table>
                 <?php
                 } ?>
-                <span><?php echo $line[1]; ?></span>
-            <?php } elseif ($line[0] == "-INFO-") { ?>
-                <tr><td COLSPAN="3" style="text-align:center;"><br><i><?php echo $line[1]; ?></i><br><br></td></tr>
+                <span><?php echo $line_data[1]; ?></span>
+            <?php } elseif ($line_data[0] == "-INFO-") { ?>
+                <tr><td COLSPAN="3" style="text-align:center;"><br><i><?php echo $line_data[1]; ?></i><br><br></td></tr>
             <?php } else { ?>
-                <tr><td COLSPAN="2"><?php echo $line[0]; ?></td><td class="left"><?php echo $line[1]; ?></td></tr>
+                <tr><td COLSPAN="2"><?php echo $line_data[0]; ?></td><td class="left"><?php echo $line_data[1]; ?></td></tr>
             <?php }
             ?>
         <?php } ?>
