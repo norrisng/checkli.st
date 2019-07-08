@@ -54,10 +54,12 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
     }
   }
   array_push($list_data['groups'], $group_data);
-}
 
-// echo "<pre>";
-// print_r($list_data);
-// echo "</pre>";
-echo json_encode($list_data);
+  // echo "<pre>";
+  // print_r($list_data);
+  // echo "</pre>";
+  echo json_encode($list_data);
+} else {
+  echo json_encode($checklists);
+}
 ?>
