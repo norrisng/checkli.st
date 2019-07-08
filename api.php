@@ -33,12 +33,19 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
       if ($first == true) {
         $first = false;
         $group_data = [];
-        $group_data['group'] = $line_data[1];
+        $group_data['name'] = $line_data[1];
+        $group_data['content'] = array();
       } else {
         array_push($list_data['groups'], $group_data);
         $group_data = [];
-        $group_data['group'] = $line_data[1];
+        $group_data['name'] = $line_data[1];
+        $group_data['content'] = array();
       }
+    } elseif ($line_data[0] == "-INFO-") {
+      array_push($group_data['content'], array(
+        "type" => "info",
+        "content" => $line_data[1]
+      ));
     }
   }
   array_push($list_data['groups'], $group_data);
