@@ -1,14 +1,5 @@
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119179825-5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-119179825-5');
-  </script>
-</head>
 <?php
+header('Content-Type: application/json');
 error_reporting(0);
 
 $current = $_GET['l'];
@@ -64,10 +55,6 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
     }
   }
   array_push($list_data['groups'], $group_data);
-
-  // echo "<pre>";
-  // print_r($list_data);
-  // echo "</pre>";
   echo json_encode($list_data);
 } else {
   $available_lists = array();
@@ -76,6 +63,5 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
   }
   echo json_encode($available_lists);
 }
-
 
 ?>
