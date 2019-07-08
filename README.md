@@ -31,12 +31,12 @@ If you have any aircraft that aren't included here, you can simply make a checkl
 
 If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.
 
-##Using the API
+## Using the API
 To use the api, get from `https://checklist.eparker.me/api.php`, with the appropriate checklist as `?l=CHECKLIST` appended to the end of the URL.
 
 If no variable is sent, or no checklist can be found: the API will output a list of available checklists. Use one of these variables in the URL, and you will receive the checklist in JSON format.
 
-###API Output Format
+### API Output Format
 
 ```
 {
@@ -55,12 +55,12 @@ If no variable is sent, or no checklist can be found: the API will output a list
 }
 ```
 
-###API Output Variables
-`name`: Name of the checklist. (The ICAO code of the aircraft)
-`groups`: Array of sections of checklist. (eg. Before Start, Engine Start, etc.)
-`group`: Name of Group.
-`content`: Array of lines/separate checks in group.
-`type`: Either `info` or `check`.
-`info`: Whole-width info, same as -INFO- in checklist formatting. `value` is a string of the value.
-`check`: Two-part checklist line (Item to check, and state of the item). `value` is an array, where `0` is the item, and `1` is the intended state.
-`value`
+### API Output Variables
+- `name`: Name of the checklist. (The ICAO code of the aircraft)
+- `groups`: Array of sections of checklist. (eg. Before Start, Engine Start, etc.)
+  - `group`: Name of Group.
+  - `content`: Array of lines/separate checks in group.
+    - `type`: Either `info` or `check`.
+      - `info`: Whole-width info, same as -INFO- in checklist formatting. `value` is a string of the value.
+      - `check`: Two-part checklist line (Item to check, and state of the item). `value` is an array, where `0` is the item, and `1` is the intended state.
+    - `value`
