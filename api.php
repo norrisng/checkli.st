@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 $current = $_GET['l'];
 
 $checklists = array();
-foreach (glob("../lists/*.csv") as $filename) {
+foreach (glob("lists/*.csv") as $filename) {
   $file = substr($filename, strpos($filename, "/") + 1, -4);
   if (strpos($file, "+") !== false) {
     foreach (explode("+", $file) as $item) {
@@ -16,12 +16,12 @@ foreach (glob("../lists/*.csv") as $filename) {
 }
 $list_data = array();
 
-if (file_exists("../lists/" . $checklists[$current] . ".csv")) {
+if (file_exists("lists/" . $checklists[$current] . ".csv")) {
   $list_data['name'] = $current;
   $first = true;
   $checklist = preg_split(
     '/\r\n|\r|\n/',
-    file_get_contents("../lists/" . $checklists[$current] . ".csv")
+    file_get_contents("lists/" . $checklists[$current] . ".csv")
   );
   foreach ($checklist as $check) {
     $line = explode(",", $check);
@@ -41,7 +41,7 @@ if (file_exists("../lists/" . $checklists[$current] . ".csv")) {
 }
 
 echo "<pre>";
-print_r($list_data);
+print_r($checklists);
 echo "</pre>";
 // echo json_encode($photos);
 ?>
