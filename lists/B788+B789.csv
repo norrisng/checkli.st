@@ -139,7 +139,7 @@ Select WIND DATA REQUEST,R6
 Select WIND DATA LOAD,R6
 Activate ROUTE,EXEC
 -GROUP-,Descent (Cont.)
--INFO-,Input takeoff performance data
+-INFO-,Input landing performance data
 AUTOBRAKE,As Req.
 -INFO-,Wait 10000ft
 LANDING LT,ON
