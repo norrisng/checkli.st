@@ -14,9 +14,9 @@ foreach (glob("../lists/*.csv") as $filename) {
     $checklists[$file] = $file;
   }
 }
+$list_data = array();
 
 if (file_exists("../lists/" . $checklists[$current] . ".csv")) {
-  $list_data = [];
   $list_data['name'] = $current;
   $first = true;
   $checklist = preg_split(
@@ -28,7 +28,7 @@ if (file_exists("../lists/" . $checklists[$current] . ".csv")) {
     if ($line[0] == "-GROUP-") {
       if ($first == true) {
         $first = false;
-        $group = [];
+        $group = array();
         $group['group'] = $line[1];
       } else {
         array_push($list_data, $group);
@@ -45,6 +45,7 @@ if (file_exists("../lists/" . $checklists[$current] . ".csv")) {
 }
 
 echo "<pre>";
-print_r($checklist);
+print_r($list_data);
 echo "</pre>";
 // echo json_encode($photos);
+?>
