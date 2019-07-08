@@ -35,9 +35,11 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
         $group = [];
         $group['group'] = $line[1];
       }
+    } else {
+      array_push($group['content'], $line);
     }
   }
-  //   array_push($list_data, $group);
+  array_push($list_data, $group);
 }
 
 echo "<pre>";
