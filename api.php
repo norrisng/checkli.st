@@ -1,3 +1,13 @@
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119179825-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119179825-5');
+  </script>
+</head>
 <?php
 error_reporting(0);
 
@@ -66,4 +76,6 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
   }
   echo json_encode($available_lists);
 }
+
+
 ?>
