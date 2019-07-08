@@ -17,24 +17,19 @@ foreach (glob("lists/*.csv") as $filename) {
 $list_data = array();
 
 if (file_exists("lists/" . $checklists[$current] . ".csv")) {
-  $list_data['name'] = $current;
-  $first = true;
   $lines = preg_split(
     '/\r\n|\r|\n/',
     file_get_contents("lists/" . $checklists[$current] . ".csv")
   );
+  $first = true;
+  $list_data['name'] = $current;
 
   foreach ($lines as $line) {
     $line_data = explode(",", $line);
-    print_r($line_data);
 
     if ($line_data[0] == "-GROUP-") {
       if ($first == true) {
         $first = false;
-        $group = array();
-        $group['group'] = $line_data[1];
-      } else {
-        array_push($list_data['groups'], $group);
         $group = [];
         $group['group'] = $line_data[1];
       }
