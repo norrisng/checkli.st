@@ -19,11 +19,11 @@ $list_data = array();
 if (file_exists("lists/" . $checklists[$current] . ".csv")) {
   $list_data['name'] = $current;
   $first = true;
-  $checklist = preg_split(
+  $lines = preg_split(
     '/\r\n|\r|\n/',
     file_get_contents("lists/" . $checklists[$current] . ".csv")
   );
-  foreach ($checklist as $line) {
+  foreach ($lines as $line) {
     $line_data = explode(",", $line);
     if ($line_data[0] == "-GROUP-") {
       if ($first == true) {
@@ -35,13 +35,6 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
         $group = [];
         $group['group'] = $line_data[1];
       }
-    } elseif ($line_data[0] == "-INFO-") {
-      array_push($group['content'], array(
-        "type" => "info",
-        "content" => $line_data[1]
-      ));
-    } else {
-      array_push($group['content'], $line);
     }
   }
   array_push($list_data['groups'], $group);
