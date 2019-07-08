@@ -60,6 +60,10 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
   // echo "</pre>";
   echo json_encode($list_data);
 } else {
-  echo json_encode($checklists);
+  $available_lists = array();
+  foreach ($checklists as $key => $item) {
+    array_push($available_lists, $key);
+  }
+  echo json_encode($available_lists);
 }
 ?>
