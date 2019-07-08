@@ -22,7 +22,9 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
     file_get_contents("lists/" . $checklists[$current] . ".csv")
   );
   $first = true;
+
   $list_data['name'] = $current;
+  $list_data['groups'] = array();
 
   foreach ($lines as $line) {
     $line_data = explode(",", $line);
@@ -30,12 +32,16 @@ if (file_exists("lists/" . $checklists[$current] . ".csv")) {
     if ($line_data[0] == "-GROUP-") {
       if ($first == true) {
         $first = false;
-        $group = [];
-        $group['group'] = $line_data[1];
+        $group_data = [];
+        $group_data['group'] = $line_data[1];
+      } else {
+        array_push($list_data['groups'], $group_data);
+        $group_data = [];
+        $group_data['group'] = $line_data[1];
       }
     }
   }
-  array_push($list_data['groups'], $group);
+  array_push($list_data['groups'], $group_data);
 }
 
 echo "<pre>";
