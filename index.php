@@ -3,14 +3,14 @@
 <?php
 $checklists = array();
 foreach (glob("flows/*.csv") as $filename) {
-  $file = substr($filename, strpos($filename, "/") + 1, -4);
-  if (strpos($file, "+") !== false) {
-    foreach (explode("+", $file) as $item) {
-      $checklists[$item] = $file;
+    $file = substr($filename, strpos($filename, "/") + 1, -4);
+    if (strpos($file, "+") !== false) {
+        foreach (explode("+", $file) as $item) {
+            $checklists[$item] = $file;
+        }
+    } else {
+        $checklists[$file] = $file;
     }
-  } else {
-    $checklists[$file] = $file;
-  }
 }
 ?>
 <html>
@@ -25,9 +25,9 @@ foreach (glob("flows/*.csv") as $filename) {
     </script>
 
     <title><?php if ($current == "") {
-      echo "checkli.st | Flight Simulation Checklist Viewer";
+        echo "checkli.st | Flight Simulation Checklist Viewer";
     } else {
-      echo $current . " | checkli.st";
+        echo $current . " | checkli.st";
     } ?></title>
     <meta name="description" content="checkli.st - Flight Simulation Checklist Viewer">
 		
@@ -48,22 +48,28 @@ foreach (glob("flows/*.csv") as $filename) {
 <form method="GET" autocomplete="off">
     <select class="menu" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" name="l">
         <option value="" <?php if ($current == "") {
-          echo "selected";
-        } ?>>Select Checklist</option>
+            echo "selected";
+        } ?>>Select Aircraft</option>
     <?php foreach ($checklists as $key => $item) { ?>
         <option value="<?php echo $key; ?>" <?php if ($current == $key) {
-  echo "selected";
+    echo "selected";
 } ?>><?php echo $key; ?></option>
     <?php } ?>
     </select>
 </form>
-<div class="body">
 <?php if (file_exists("flows/" . $checklists[$current] . ".csv")) { ?>
+  <?php if (file_exists("checklists/" . $checklists[$current] . ".csv")) { ?>
+    <div class="mode-select">
+      <a href="?m=flow">Flow</a>
+      <a href="?m=checklist">Checklist</a>
+    </div>
+  <?php } ?>
+<div class="body">
     <?php
     $first = true;
     $checklist = preg_split(
-      '/\r\n|\r|\n/',
-      file_get_contents("flows/" . $checklists[$current] . ".csv")
+        '/\r\n|\r|\n/',
+        file_get_contents("flows/" . $checklists[$current] . ".csv")
     );
     ?>
         <?php foreach ($checklist as $line) { ?>
@@ -71,12 +77,12 @@ foreach (glob("flows/*.csv") as $filename) {
             $line_data = explode(",", $line);
             if ($line_data[0] == "-GROUP-") { ?>
                 <?php if ($first == true) {
-                  $first = false; ?>
+                    $first = false; ?>
                     <div class="block">
                         <table>
                 <?php
                 } else {
-                   ?>
+                     ?>
                         </table>
                     </div>
                     <div class="block">
@@ -94,14 +100,15 @@ foreach (glob("flows/*.csv") as $filename) {
         </table>
     </div>
 <?php } else { ?>
+<div class="body">
     <h1>checkli.st</h1><br>
-    <h2>Open-Source Flight Simulation Checklist Viewer</h2><br>
+    <h2>Open-Source Flight Simulation Checklist/Flow Viewer</h2><br>
     <br>
     <p>Available on <a href="https://github.com/flightcode/checkli.st">github</a></p><br>
     <br>
-    <p>If you have any aircraft that aren't included here, you can simply make a checklist file for it, and attach the file to an issue on github. If you cannot create a checklist yourself, you are also able to request a checklist be made, by creating an issue.</p><br>
+    <p>If you have any aircraft that aren't included here, you can simply make a checklist file for it, and attach the file to an issue on github. If you cannot create a checklist/flow yourself, you are also able to request one be made, by creating an issue.</p><br>
     <br>
-    <p>If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.</p><br>
+    <p>If there is an error in a checklist/flow, or you have a suggested alteration, please either make a merge request with the fix, or create an issue.</p><br>
     <br>
     <h3>Current Aircraft Supported:</h3><br>
     <ul>
