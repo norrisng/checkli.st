@@ -1,5 +1,6 @@
 <?php error_reporting(0); ?>
 <?php $current = $_GET['l']; ?>
+<?php $mode = $_GET['m']; ?>
 <?php
 $checklists = array();
 foreach (glob("flows/*.csv") as $filename) {
@@ -59,18 +60,27 @@ foreach (glob("flows/*.csv") as $filename) {
 <?php if (file_exists("flows/" . $checklists[$current] . ".csv")) { ?>
   <?php if (file_exists("checklists/" . $checklists[$current] . ".csv")) { ?>
     <div class="mode-select">
-      <input type="radio" name="mode" value="flow" id="flow"/><label for="flow">Flow</label>
-      <input type="radio" name="mode" value="checklist" id="checklist" /><label for="checklist">Checklist</label>
+      <input id="flow" type="radio" name="m" value="flow" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" />
+      <label for="flow">Flow</label>
+      <input id="checklist" type="radio" name="m" value="checklist" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" />
+      <label for="checklist">Checklist</label>
     </div>
   <?php } ?>
 </form>
 <div class="body">
     <?php
     $first = true;
-    $checklist = preg_split(
-        '/\r\n|\r|\n/',
-        file_get_contents("flows/" . $checklists[$current] . ".csv")
-    );
+    if($mode == "checklist") {
+      $checklist = preg_split(
+          '/\r\n|\r|\n/',
+          file_get_contents("checklists/" . $checklists[$current] . ".csv")
+      );
+    } else {
+      $checklist = preg_split(
+          '/\r\n|\r|\n/',
+          file_get_contents("flows/" . $checklists[$current] . ".csv")
+      );
+    }
     ?>
         <?php foreach ($checklist as $line) { ?>
             <?php
