@@ -1,9 +1,10 @@
 # checkli.st
 
-Flight Simulation Checklist Viewer. Available at https://checklist.eparker.me
+Flight Simulation Checklist/Flow Viewer. Available at https://checklist.eparker.me
 
 Displays .csv files as checklists, with the functionality for:
 
+- Simplified checklists and step-by-step flows
 - Different checklist groups (Before Start, Landing, etc)
 - Items that require waiting/monitoring/confirming a certain item has been met, or that should be emphasised in the checklist
 - Normal checks (Possibility to add item-by-item checking off in the future)
@@ -32,6 +33,7 @@ If you have any aircraft that aren't included here, you can simply make a checkl
 If there is an error in a checklist, or you have a suggested alteration to a checklist, please either make a merge request with the fix, or create an issue.
 
 ## Using the API
+
 To use the api, get from `https://checklist.eparker.me/api.php`, with the appropriate checklist as `?l=CHECKLIST` appended to the end of the URL.
 
 If no variable is sent, or no checklist can be found: the API will output a list of available checklists. Use one of these variables in the URL, and you will receive the checklist in JSON format.
@@ -56,6 +58,7 @@ If no variable is sent, or no checklist can be found: the API will output a list
 ```
 
 ### API Output Variables
+
 - `name`: Name of the checklist. (The ICAO code of the aircraft)
 - `groups`: Array of sections of checklist. (eg. Before Start, Engine Start, etc.)
   - `group`: Name of Group.
