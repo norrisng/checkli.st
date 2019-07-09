@@ -1,0 +1,47 @@
+-GROUP-,Before Flight
+Oxygen,Tested 100%
+Flight Instruments,Heading/Atimeter As Req.
+Parking Brake,Set
+FUEL CONTROL switches,CUTOFF
+-GROUP-,Before Start
+Flight Deck Door,Closed and Locked
+Passenger Signs,As Req.
+MCP, V2/HDG/ALTITUDE As Req.
+CDU PreFlight,Completed
+Trim,0
+Taxi and Takeoff Briefing,Completed
+BEACON,ON
+-GROUP-,Before Taxi
+Anti-Ice,As Req.
+Recall,Checked
+Autobrake,RTO
+Flight Controls,Checked
+Ground Equipment,Clear
+-GROUP-,Before Takeoff
+Flaps,As Req.
+-GROUP-,After Takeoff
+Landing Gear,UP
+Flaps,UP
+-GROUP-,Descent
+Recall,Checked
+Notes,Checked
+Autobrake,As Req.
+Landing Data,VREF/Minimums As Req.
+Approach Briefing,Completed
+-GROUP-,Approach
+Altimeters,As Req.
+-GROUP-,Landing
+Speedbrake,ARMED
+Landing Gear,DOWN
+Flaps,As Req.
+-GROUP-,Engine Shutdown
+Hydraulic Panel,Set
+Fuel Pumps,Off
+Flaps,UP
+Parking Brake,As Req.
+FUEL CONTROL switches,CUTOFF
+Weather radar,Off
+-GROUP-,Aircraft Secure
+IRS,Off
+Emergency Lights,Off
+Packs,OFF
