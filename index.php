@@ -59,8 +59,8 @@ foreach (glob("flows/*.csv") as $filename) {
 <?php if (file_exists("flows/" . $checklists[$current] . ".csv")) { ?>
   <?php if (file_exists("checklists/" . $checklists[$current] . ".csv")) { ?>
     <div class="mode-select">
-      <input type="checkbox" name="mode" value="flow">Flow</input>
-      <input type="checkbox" name="mode" value="checklist">Checklist</input>
+      <input type="radio" name="mode" value="flow" id="flow"/><label for="flow">Flow</label>
+      <input type="radio" name="mode" value="checklist" id="checklist" /><label for="checklist">Checklist</label>
     </div>
   <?php } ?>
 </form>
