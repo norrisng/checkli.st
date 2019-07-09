@@ -4,9 +4,16 @@ header("Access-Control-Allow-Origin: *");
 error_reporting(0);
 
 $current = $_GET['l'];
+$mode = $_GET['m'];
+
+if ($mode == "checklist") {
+    $files = glob("checklists/*.csv");
+} else {
+    $files = glob("flows/*.csv");
+}
 
 $checklists = array();
-foreach (glob("flows/*.csv") as $filename) {
+foreach ($files as $filename) {
     $file = substr($filename, strpos($filename, "/") + 1, -4);
     if (strpos($file, "+") !== false) {
         foreach (explode("+", $file) as $item) {
