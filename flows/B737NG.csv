@@ -1,0 +1,63 @@
+﻿-GROUP-,PREFLIGHT
+Oxygen,"Tested, 100%"
+Navigation transfer and display switches,"NORMAL, AUTO"
+Window heat,ON
+Pressurization mode selector,AUTO
+Flight instruments,"Heading __, Altimeter __"
+Parking brake,Set
+Engine start levers,CUTOFF
+-GROUP-,BEFORE START
+Flight deck door,Closed and locked
+Fuel,"__ KGS, Pumps ON"
+Passenger signs,ON
+Windows,Locked
+MCP,"V2 __, HDG __, ALT __"
+Takeoff speeds,"V1 __, VR __, V2 __"
+CDU preflight,Completed
+Rudder and aileron trim,Free and 0
+Taxi and takeoff briefing,Completed
+Anti-collision light,ON
+-GROUP-,BEFORE TAXI
+Generators,ON
+Probe heat,ON
+Anti-ice,__
+Isolation valve,AUTO
+Engine start switches,CONT
+Recall,Checked
+Autobrake,RTO
+Flaps,"5, Green light"
+Engine start levers,IDLE detent
+Flight controls,Checked
+Ground equipment,Clear
+-GROUP-,AFTER TAKEOFF
+Engine bleeds,ON
+Packs,AUTO
+Landing gear,UP and OFF
+Flaps,"Up, No lights"
+Altimeters,Standard
+-GROUP-,DESCENT
+Pressurization,LAND ALT __
+Recall,Checked
+Autobrake,__
+Landing data,"VREF __, Minimums __"
+Approach briefing,Completed
+-GROUP-,APPROACH
+Altimeters,__
+-GROUP-,LANDING
+Engine start switches,CONT
+Speedbrake,ARMED
+Landing gear,Down
+Flaps,"__, Green light"
+-GROUP-,SHUTDOWN
+Fuel pumps,OFF
+Probe heat,AUTO or OFF
+Hydraulic panel,Set
+Flaps,UP
+Parking brake,SET
+Engine start levers,CUTOFF
+Weather radar,Off
+-GROUP-,SECURE
+IRSs,OFF
+Emergency exit lights,OFF
+Window heat,OFF
+Packs,OFF
