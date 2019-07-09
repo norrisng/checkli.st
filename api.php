@@ -6,7 +6,7 @@ error_reporting(0);
 $current = $_GET['l'];
 
 $checklists = array();
-foreach (glob("lists/*.csv") as $filename) {
+foreach (glob("flows/*.csv") as $filename) {
   $file = substr($filename, strpos($filename, "/") + 1, -4);
   if (strpos($file, "+") !== false) {
     foreach (explode("+", $file) as $item) {
@@ -18,10 +18,10 @@ foreach (glob("lists/*.csv") as $filename) {
 }
 $list_data = array();
 
-if (file_exists("lists/" . $checklists[$current] . ".csv")) {
+if (file_exists("flows/" . $checklists[$current] . ".csv")) {
   $lines = preg_split(
     '/\r\n|\r|\n/',
-    file_get_contents("lists/" . $checklists[$current] . ".csv")
+    file_get_contents("flows/" . $checklists[$current] . ".csv")
   );
   $first = true;
 
