@@ -60,7 +60,7 @@ foreach (glob("flows/*.csv") as $filename) {
 <?php if (file_exists("flows/" . $checklists[$current] . ".csv")) { ?>
   <?php if (file_exists("checklists/" . $checklists[$current] . ".csv")) { ?>
     <div class="mode-select">
-      <input id="flow" type="radio" name="m" value="" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" />
+      <input id="flow" type="radio" name="m" value="flow" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" />
       <label for="flow">Flow</label>
       <input id="checklist" type="radio" name="m" value="checklist" onchange="if(this.value == '') {window.location.href = 'http://' + window.location.hostname + window.location.pathname;} else {this.form.submit();}" />
       <label for="checklist">Checklist</label>
