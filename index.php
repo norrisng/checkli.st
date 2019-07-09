@@ -70,16 +70,16 @@ foreach (glob("flows/*.csv") as $filename) {
 <div class="body">
     <?php
     $first = true;
-    if($mode == "checklist") {
-      $checklist = preg_split(
-          '/\r\n|\r|\n/',
-          file_get_contents("checklists/" . $checklists[$current] . ".csv")
-      );
+    if ($mode == "checklist") {
+        $checklist = preg_split(
+            '/\r\n|\r|\n/',
+            file_get_contents("checklists/" . $checklists[$current] . ".csv")
+        );
     } else {
-      $checklist = preg_split(
-          '/\r\n|\r|\n/',
-          file_get_contents("flows/" . $checklists[$current] . ".csv")
-      );
+        $checklist = preg_split(
+            '/\r\n|\r|\n/',
+            file_get_contents("flows/" . $checklists[$current] . ".csv")
+        );
     }
     ?>
         <?php foreach ($checklist as $line) { ?>
