@@ -2,7 +2,7 @@
 <?php $current = $_GET['l']; ?>
 <?php
 $checklists = array();
-foreach (glob("lists/*.csv") as $filename) {
+foreach (glob("flows/*.csv") as $filename) {
   $file = substr($filename, strpos($filename, "/") + 1, -4);
   if (strpos($file, "+") !== false) {
     foreach (explode("+", $file) as $item) {
@@ -58,12 +58,12 @@ foreach (glob("lists/*.csv") as $filename) {
     </select>
 </form>
 <div class="body">
-<?php if (file_exists("lists/" . $checklists[$current] . ".csv")) { ?>
+<?php if (file_exists("flows/" . $checklists[$current] . ".csv")) { ?>
     <?php
     $first = true;
     $checklist = preg_split(
       '/\r\n|\r|\n/',
-      file_get_contents("lists/" . $checklists[$current] . ".csv")
+      file_get_contents("flows/" . $checklists[$current] . ".csv")
     );
     ?>
         <?php foreach ($checklist as $line) { ?>
