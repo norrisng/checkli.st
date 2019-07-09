@@ -56,14 +56,14 @@ foreach (glob("flows/*.csv") as $filename) {
 } ?>><?php echo $key; ?></option>
     <?php } ?>
     </select>
-</form>
 <?php if (file_exists("flows/" . $checklists[$current] . ".csv")) { ?>
   <?php if (file_exists("checklists/" . $checklists[$current] . ".csv")) { ?>
     <div class="mode-select">
-      <a href="?m=flow">Flow</a>
-      <a href="?m=checklist">Checklist</a>
+      <input type="checkbox" name="mode" value="flow">Flow</input>
+      <input type="checkbox" name="mode" value="checklist">Checklist</input>
     </div>
   <?php } ?>
+</form>
 <div class="body">
     <?php
     $first = true;
@@ -100,6 +100,7 @@ foreach (glob("flows/*.csv") as $filename) {
         </table>
     </div>
 <?php } else { ?>
+</form>
 <div class="body">
     <h1>checkli.st</h1><br>
     <h2>Open-Source Flight Simulation Checklist/Flow Viewer</h2><br>

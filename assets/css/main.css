@@ -48,7 +48,7 @@ ul {
     border: 0;
     background-color: #fff;
 }
-.mode-select a {
+.mode-select input {
     width: calc(50% - 3px);
     display: inline-block;
     margin: 0;
