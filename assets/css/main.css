@@ -49,6 +49,9 @@ ul {
     background-color: #fff;
 }
 .mode-select input {
+    display: none;
+}
+.mode-select label {
     width: calc(50% - 3px);
     display: inline-block;
     margin: 0;
